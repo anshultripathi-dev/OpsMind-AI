@@ -1,0 +1,154 @@
+{
+ "runs": 8,
+ "fault_episodes": 6,
+ "impacted": 3,
+ "windows": 439,
+ "note": "Zero-shot: models trained on simulator data only; labels from the injector log.",
+ "detection": {
+  "static_thresholds": {
+   "precision": 1.0,
+   "recall": 0.6396,
+   "f1": 0.7802,
+   "tp": 71,
+   "fp": 0,
+   "fn": 40,
+   "detected": 4,
+   "episode_recall": 0.6667,
+   "mean_delay_s": 44.6,
+   "false_alarms": 0,
+   "false_alarms_per_hour": 0.0
+  },
+  "opsmind_detector": {
+   "precision": 0.3008,
+   "recall": 1.0,
+   "f1": 0.4625,
+   "tp": 111,
+   "fp": 258,
+   "fn": 0,
+   "detected": 6,
+   "episode_recall": 1.0,
+   "mean_delay_s": 0.0,
+   "false_alarms": 2,
+   "false_alarms_per_hour": 2.791
+  }
+ },
+ "early_warning": {
+  "opsmind": {
+   "eligible_episodes": 3,
+   "warned": 0,
+   "late": 1,
+   "missed": 2,
+   "false_alarms": 0,
+   "false_alarms_per_hour": 0.0,
+   "mean_lead_s": 0.0,
+   "recall": 0.0,
+   "precision": 0.0
+  },
+  "static_thresholds": {
+   "eligible_episodes": 3,
+   "warned": 0,
+   "late": 3,
+   "missed": 0,
+   "false_alarms": 0,
+   "false_alarms_per_hour": 0.0,
+   "mean_lead_s": 0.0,
+   "recall": 0.0,
+   "precision": 0.0
+  }
+ },
+ "classification": {
+  "windows": 111,
+  "accuracy": 0.4414
+ },
+ "rootcause": {
+  "top1": 0.1667,
+  "top3": 0.8333,
+  "n": 6
+ },
+ "episodes": {
+  "real001": {
+   "fault": "db_slowdown",
+   "target": "postgres",
+   "classified": "cache_failure",
+   "rca_top3": [
+    "redis",
+    "postgres",
+    "gateway"
+   ],
+   "top1": false,
+   "top3": true,
+   "impact_start": 190.0,
+   "intensity": 0.978
+  },
+  "real002": {
+   "fault": "memory_leak",
+   "target": "order",
+   "classified": "cache_failure",
+   "rca_top3": [
+    "redis",
+    "order",
+    "auth"
+   ],
+   "top1": false,
+   "top3": true,
+   "impact_start": null,
+   "intensity": 0.803
+  },
+  "real003": {
+   "fault": "network_latency",
+   "target": "payment",
+   "classified": "cache_failure",
+   "rca_top3": [
+    "redis",
+    "postgres",
+    "order"
+   ],
+   "top1": false,
+   "top3": false,
+   "impact_start": 230.0,
+   "intensity": 0.798
+  },
+  "real004": {
+   "fault": "service_crash",
+   "target": "auth",
+   "classified": "service_crash",
+   "rca_top3": [
+    "gateway",
+    "auth",
+    "postgres"
+   ],
+   "top1": false,
+   "top3": true,
+   "impact_start": 185.0,
+   "intensity": 0.909
+  },
+  "real005": {
+   "fault": "cache_failure",
+   "target": "redis",
+   "classified": "cache_failure",
+   "rca_top3": [
+    "redis",
+    "auth",
+    "order"
+   ],
+   "top1": true,
+   "top3": true,
+   "impact_start": null,
+   "intensity": 0.719
+  },
+  "real006": {
+   "fault": "cpu_saturation",
+   "target": "postgres",
+   "classified": "cache_failure",
+   "rca_top3": [
+    "redis",
+    "postgres",
+    "gateway"
+   ],
+   "top1": false,
+   "top3": true,
+   "impact_start": null,
+   "intensity": 0.763
+  }
+ }
+}

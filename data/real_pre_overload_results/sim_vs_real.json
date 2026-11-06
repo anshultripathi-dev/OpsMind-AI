@@ -1,0 +1,50 @@
+{
+ "test_runs": 13,
+ "test_fault_episodes": 12,
+ "detection": {
+  "static_thresholds": {
+   "precision": 0.7043,
+   "recall": 0.5598,
+   "f1": 0.6238,
+   "tp": 131,
+   "fp": 55,
+   "fn": 103,
+   "detected": 8,
+   "episode_recall": 0.6667,
+   "mean_delay_s": 41.7,
+   "false_alarms": 5,
+   "false_alarms_per_hour": 6.02
+  },
+  "simulator_zero_shot": {
+   "precision": 0.439,
+   "recall": 1.0,
+   "f1": 0.6102,
+   "tp": 234,
+   "fp": 299,
+   "fn": 0,
+   "detected": 12,
+   "episode_recall": 1.0,
+   "mean_delay_s": 0.0,
+   "false_alarms": 1,
+   "false_alarms_per_hour": 1.204
+  }
+ },
+ "early_warning": {
+  "static_thresholds": {
+   "eligible_episodes": 3,
+   "warned": 1,
+   "late": 2,
+   "missed": 0,
+   "false_alarms_per_hour": 7.224,
+   "mean_lead_s": 9.7
+  },
+  "simulator_zero_shot": {
+   "eligible_episodes": 3,
+   "warned": 0,
+   "late": 2,
+   "missed": 1,
+   "false_alarms_per_hour": 0.0,
+   "mean_lead_s": 0.0
+  }
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "runs": 254,
+ "fault_episodes": 210,
+ "normal_runs": 44,
+ "normal_hours": 22.0,
+ "total_hours": 127.0,
+ "windows": 45212,
+ "n_features": 299,
+ "n_metric_features": 215,
+ "n_log_features": 84,
+ "n_templates": 36,
+ "log_lines": 579907,
+ "impacted_episodes": 161,
+ "episodes_by_fault": {
+  "cache_failure": 35,
+  "db_slowdown": 35,
+  "cpu_saturation": 35,
+  "service_crash": 35,
+  "memory_leak": 35,
+  "network_latency": 35
+ },
+ "impacted_by_fault": {
+  "cache_failure": 35,
+  "db_slowdown": 28,
+  "cpu_saturation": 24,
+  "service_crash": 34,
+  "memory_leak": 15,
+  "network_latency": 25
+ },
+ "windows_by_split": {
+  "train": 27056,
+  "test": 11570,
+  "val": 6586
+ },
+ "runs_by_split": {
+  "train": 152,
+  "val": 37,
+  "test": 65
+ },
+ "seconds": 7.9
+}

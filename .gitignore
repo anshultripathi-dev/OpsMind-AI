@@ -1,0 +1,23 @@
+# Python environments, bytecode, and test tooling
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / Vite build output
+dashboard/node_modules/
+dashboard/dist/
+
+# Local operating-system and editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Regenerable archives and run-time output
+docs/screenshots.zip
+*.log
+
+# Keep the curated sample data and trained artifacts that make the demo runnable.
+# Do not ignore data/ or artifacts/.

@@ -1,0 +1,8 @@
+{"run_start": 1791107814.659682, "fault_type": null, "run_end": 1791108354.650605}
+{"run_start": 1791108354.6518679, "fault_type": "db_slowdown", "target": "postgres", "duration": 156.51926580007884, "intensity": 0.978, "fault_start": 1791108533.706656, "fault_end": 1791108690.308809, "run_end": 1791108894.6532822}
+{"run_start": 1791108894.6546712, "fault_type": "memory_leak", "target": "order", "duration": 156.2869881217157, "intensity": 0.803, "fault_start": 1791109066.905174, "fault_end": 1791109223.3062432, "run_end": 1791109434.661119}
+{"run_start": 1791109434.663289, "fault_type": "network_latency", "target": "payment", "duration": 185.7012427185702, "intensity": 0.798, "fault_start": 1791109661.52672, "fault_end": 1791109847.4948149, "run_end": 1791109974.66853}
+{"run_start": 1791109974.6705039, "fault_type": "service_crash", "target": "auth", "duration": 207.50221220335658, "intensity": 0.909, "fault_start": 1791110155.514996, "fault_end": 1791110363.255775, "run_end": 1791110514.6756978}
+{"run_start": 1791110514.676787, "fault_type": "cache_failure", "target": "redis", "duration": 202.7005677156875, "intensity": 0.719, "fault_start": 1791110710.337752, "fault_end": 1791110913.2750442, "run_end": 1791111054.6826692}
+{"run_start": 1791111054.683721, "fault_type": "cpu_saturation", "target": "postgres", "duration": 194.560472359973, "intensity": 0.763, "fault_start": 1791111239.3245828, "fault_end": 1791111433.997451, "run_end": 1791111594.683949}
+{"run_start": 1791111594.685326, "fault_type": null, "run_end": 1791113934.9429991}

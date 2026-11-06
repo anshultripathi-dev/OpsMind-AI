@@ -1,0 +1,7036 @@
+[
+ {
+  "run_id": "cac031",
+  "kind": "fault",
+  "index": 0,
+  "wall_start": 1788220800.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 380.0,
+  "fault_end": 860.0,
+  "impact_start": 395.0,
+  "intensity": 0.808,
+  "ramp": 12.206247637065571,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 1395,
+    "duration": 75,
+    "cpu": 28.9,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "n005",
+  "kind": "normal",
+  "index": 1,
+  "wall_start": 1788222720.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 895.0,
+    "hold": 142.0,
+    "factor": 3.58,
+    "ramp": 36.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "cac022",
+  "kind": "fault",
+  "index": 2,
+  "wall_start": 1788224640.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 410.0,
+  "fault_end": 935.0,
+  "impact_start": 420.0,
+  "intensity": 0.839,
+  "ramp": 8.789449281423988,
+  "spikes": [
+   {
+    "start": 825.0,
+    "hold": 222.0,
+    "factor": 3.31,
+    "ramp": 39.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "db_023",
+  "kind": "fault",
+  "index": 3,
+  "wall_start": 1788226560.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 620.0,
+  "fault_end": 860.0,
+  "impact_start": 775.0,
+  "intensity": 0.679,
+  "ramp": 145.12681463172876,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 714,
+    "duration": 93,
+    "cpu": 41.5,
+    "target": "auth",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cac014",
+  "kind": "fault",
+  "index": 4,
+  "wall_start": 1788228480.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 395.0,
+  "fault_end": 925.0,
+  "impact_start": 400.0,
+  "intensity": 0.537,
+  "ramp": 1.1251334388220164,
+  "spikes": [
+   {
+    "start": 768.0,
+    "hold": 187.0,
+    "factor": 2.96,
+    "ramp": 24.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu002",
+  "kind": "fault",
+  "index": 5,
+  "wall_start": 1788230400.0,
+  "fault_type": "cpu_saturation",
+  "target": "auth",
+  "fault_start": 535.0,
+  "fault_end": 795.0,
+  "impact_start": 680.0,
+  "intensity": 0.698,
+  "ramp": 67.41638963077462,
+  "spikes": [
+   {
+    "start": 662.0,
+    "hold": 229.0,
+    "factor": 2.95,
+    "ramp": 33.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu020",
+  "kind": "fault",
+  "index": 6,
+  "wall_start": 1788232320.0,
+  "fault_type": "cpu_saturation",
+  "target": "payment",
+  "fault_start": 390.0,
+  "fault_end": 850.0,
+  "impact_start": 570.0,
+  "intensity": 0.964,
+  "ramp": 218.0073002312275,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 193,
+    "duration": 146,
+    "cpu": 25.4,
+    "target": "postgres",
+    "mem": 26.9
+   },
+   {
+    "start": 1340,
+    "duration": 63,
+    "cpu": 41.2,
+    "target": "auth",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "ser003",
+  "kind": "fault",
+  "index": 7,
+  "wall_start": 1788234240.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 385.0,
+  "fault_end": 810.0,
+  "impact_start": 385.0,
+  "intensity": 0.707,
+  "ramp": 0.0,
+  "spikes": [
+   {
+    "start": 622.0,
+    "hold": 223.0,
+    "factor": 3.37,
+    "ramp": 27.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1269,
+    "duration": 95,
+    "cpu": 36.1,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "n004",
+  "kind": "normal",
+  "index": 8,
+  "wall_start": 1788236160.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "ser008",
+  "kind": "fault",
+  "index": 9,
+  "wall_start": 1788238080.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 640.0,
+  "fault_end": 890.0,
+  "impact_start": 640.0,
+  "intensity": 0.872,
+  "ramp": 0.0,
+  "spikes": [
+   {
+    "start": 731.0,
+    "hold": 196.0,
+    "factor": 2.01,
+    "ramp": 32.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 530,
+    "duration": 92,
+    "cpu": 44.3,
+    "target": "gateway",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "mem024",
+  "kind": "fault",
+  "index": 10,
+  "wall_start": 1788240000.0,
+  "fault_type": "memory_leak",
+  "target": "redis",
+  "fault_start": 410.0,
+  "fault_end": 785.0,
+  "impact_start": null,
+  "intensity": 0.442,
+  "ramp": 389.9838447611004,
+  "spikes": [
+   {
+    "start": 495.0,
+    "hold": 192.0,
+    "factor": 2.9,
+    "ramp": 20.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "mem012",
+  "kind": "fault",
+  "index": 11,
+  "wall_start": 1788241920.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 690.0,
+  "fault_end": 1115.0,
+  "impact_start": 870.0,
+  "intensity": 0.604,
+  "ramp": 398.4325168838676,
+  "spikes": [
+   {
+    "start": 841.0,
+    "hold": 197.0,
+    "factor": 3.24,
+    "ramp": 18.0
+   },
+   {
+    "start": 1175.0,
+    "hold": 225.0,
+    "factor": 1.91,
+    "ramp": 31.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "mem003",
+  "kind": "fault",
+  "index": 12,
+  "wall_start": 1788243840.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 440.0,
+  "fault_end": 895.0,
+  "impact_start": null,
+  "intensity": 0.609,
+  "ramp": 246.73510024233516,
+  "spikes": [
+   {
+    "start": 567.0,
+    "hold": 122.0,
+    "factor": 4.18,
+    "ramp": 34.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 819,
+    "duration": 115,
+    "cpu": 39.6,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "n010",
+  "kind": "normal",
+  "index": 13,
+  "wall_start": 1788245760.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 509.0,
+    "hold": 86.0,
+    "factor": 3.14,
+    "ramp": 34.0
+   },
+   {
+    "start": 749.0,
+    "hold": 185.0,
+    "factor": 3.14,
+    "ramp": 28.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1433,
+    "duration": 111,
+    "cpu": 25.4,
+    "target": "postgres",
+    "mem": 40.5
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu018",
+  "kind": "fault",
+  "index": 14,
+  "wall_start": 1788247680.0,
+  "fault_type": "cpu_saturation",
+  "target": "auth",
+  "fault_start": 580.0,
+  "fault_end": 880.0,
+  "impact_start": 655.0,
+  "intensity": 0.934,
+  "ramp": 115.77870032497383,
+  "spikes": [
+   {
+    "start": 617.0,
+    "hold": 190.0,
+    "factor": 2.17,
+    "ramp": 37.0
+   },
+   {
+    "start": 1151.0,
+    "hold": 67.0,
+    "factor": 3.49,
+    "ramp": 36.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 939,
+    "duration": 137,
+    "cpu": 24.4,
+    "target": "postgres",
+    "mem": 30.2
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu014",
+  "kind": "fault",
+  "index": 15,
+  "wall_start": 1788249600.0,
+  "fault_type": "cpu_saturation",
+  "target": "auth",
+  "fault_start": 670.0,
+  "fault_end": 1045.0,
+  "impact_start": 820.0,
+  "intensity": 0.492,
+  "ramp": 166.47465288146657,
+  "spikes": [
+   {
+    "start": 655.0,
+    "hold": 240.0,
+    "factor": 2.82,
+    "ramp": 16.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "net029",
+  "kind": "fault",
+  "index": 16,
+  "wall_start": 1788251520.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 590.0,
+  "fault_end": 1080.0,
+  "impact_start": 735.0,
+  "intensity": 0.822,
+  "ramp": 48.66286893968117,
+  "spikes": [
+   {
+    "start": 709.0,
+    "hold": 104.0,
+    "factor": 3.42,
+    "ramp": 29.0
+   },
+   {
+    "start": 1427.0,
+    "hold": 111.0,
+    "factor": 2.57,
+    "ramp": 29.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "mem009",
+  "kind": "fault",
+  "index": 17,
+  "wall_start": 1788253440.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 450.0,
+  "fault_end": 740.0,
+  "impact_start": 625.0,
+  "intensity": 0.874,
+  "ramp": 224.5074286230109,
+  "spikes": [
+   {
+    "start": 673.0,
+    "hold": 240.0,
+    "factor": 3.2,
+    "ramp": 32.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 605,
+    "duration": 151,
+    "cpu": 15.3,
+    "target": "postgres",
+    "mem": 25.8
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "ser000",
+  "kind": "fault",
+  "index": 18,
+  "wall_start": 1788255360.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 535.0,
+  "fault_end": 780.0,
+  "impact_start": 680.0,
+  "intensity": 0.47,
+  "ramp": 157.43188564407728,
+  "spikes": [
+   {
+    "start": 581.0,
+    "hold": 212.0,
+    "factor": 2.44,
+    "ramp": 30.0
+   },
+   {
+    "start": 450.0,
+    "hold": 186.0,
+    "factor": 2.06,
+    "ramp": 26.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "n003",
+  "kind": "normal",
+  "index": 19,
+  "wall_start": 1788257280.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 1320.0,
+    "hold": 191.0,
+    "factor": 3.38,
+    "ramp": 22.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 685,
+    "duration": 101,
+    "cpu": 28.0,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "mem013",
+  "kind": "fault",
+  "index": 20,
+  "wall_start": 1788259200.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 455.0,
+  "fault_end": 785.0,
+  "impact_start": null,
+  "intensity": 0.659,
+  "ramp": 172.3149395187062,
+  "spikes": [],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "net025",
+  "kind": "fault",
+  "index": 21,
+  "wall_start": 1788261120.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 620.0,
+  "fault_end": 955.0,
+  "impact_start": 710.0,
+  "intensity": 0.707,
+  "ramp": 40.605607053072475,
+  "spikes": [
+   {
+    "start": 690.0,
+    "hold": 88.0,
+    "factor": 3.39,
+    "ramp": 22.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 308,
+    "duration": 55,
+    "cpu": 31.7,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "mem010",
+  "kind": "fault",
+  "index": 22,
+  "wall_start": 1788263040.0,
+  "fault_type": "memory_leak",
+  "target": "payment",
+  "fault_start": 395.0,
+  "fault_end": 780.0,
+  "impact_start": 480.0,
+  "intensity": 0.438,
+  "ramp": 226.6985178833259,
+  "spikes": [
+   {
+    "start": 454.0,
+    "hold": 69.0,
+    "factor": 2.83,
+    "ramp": 22.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1478,
+    "duration": 110,
+    "cpu": 31.9,
+    "target": "auth",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "net033",
+  "kind": "fault",
+  "index": 23,
+  "wall_start": 1788264960.0,
+  "fault_type": "network_latency",
+  "target": "redis",
+  "fault_start": 660.0,
+  "fault_end": 1180.0,
+  "impact_start": 680.0,
+  "intensity": 0.786,
+  "ramp": 92.31638540848596,
+  "spikes": [
+   {
+    "start": 891.0,
+    "hold": 230.0,
+    "factor": 4.68,
+    "ramp": 18.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1274,
+    "duration": 59,
+    "cpu": 29.0,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "net014",
+  "kind": "fault",
+  "index": 24,
+  "wall_start": 1788266880.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 720.0,
+  "fault_end": 980.0,
+  "impact_start": 745.0,
+  "intensity": 0.898,
+  "ramp": 23.38809541464159,
+  "spikes": [
+   {
+    "start": 316.0,
+    "hold": 231.0,
+    "factor": 3.67,
+    "ramp": 36.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "cac002",
+  "kind": "fault",
+  "index": 25,
+  "wall_start": 1788268800.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 705.0,
+  "fault_end": 1025.0,
+  "impact_start": 710.0,
+  "intensity": 0.453,
+  "ramp": 4.1924686502227635,
+  "spikes": [
+   {
+    "start": 921.0,
+    "hold": 205.0,
+    "factor": 3.12,
+    "ramp": 31.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 441,
+    "duration": 152,
+    "cpu": 23.8,
+    "target": "postgres",
+    "mem": 38.6
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "n000",
+  "kind": "normal",
+  "index": 26,
+  "wall_start": 1788270720.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 130.0,
+    "hold": 208.0,
+    "factor": 2.98,
+    "ramp": 17.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu006",
+  "kind": "fault",
+  "index": 27,
+  "wall_start": 1788272640.0,
+  "fault_type": "cpu_saturation",
+  "target": "redis",
+  "fault_start": 415.0,
+  "fault_end": 775.0,
+  "impact_start": null,
+  "intensity": 0.841,
+  "ramp": 150.97208812477135,
+  "spikes": [],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "n002",
+  "kind": "normal",
+  "index": 28,
+  "wall_start": 1788274560.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 596.0,
+    "hold": 159.0,
+    "factor": 3.72,
+    "ramp": 17.0
+   },
+   {
+    "start": 357.0,
+    "hold": 182.0,
+    "factor": 1.98,
+    "ramp": 26.0
+   },
+   {
+    "start": 903.0,
+    "hold": 142.0,
+    "factor": 2.74,
+    "ramp": 22.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "db_003",
+  "kind": "fault",
+  "index": 29,
+  "wall_start": 1788276480.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 630.0,
+  "fault_end": 1165.0,
+  "impact_start": 680.0,
+  "intensity": 0.583,
+  "ramp": 153.7378120795358,
+  "spikes": [
+   {
+    "start": 1015.0,
+    "hold": 119.0,
+    "factor": 2.5,
+    "ramp": 39.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 556,
+    "duration": 196,
+    "cpu": 28.4,
+    "target": "postgres",
+    "mem": 41.3
+   },
+   {
+    "start": 459,
+    "duration": 112,
+    "cpu": 31.0,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "db_028",
+  "kind": "fault",
+  "index": 30,
+  "wall_start": 1788278400.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 410.0,
+  "fault_end": 925.0,
+  "impact_start": 585.0,
+  "intensity": 0.57,
+  "ramp": 132.33560557573273,
+  "spikes": [
+   {
+    "start": 546.0,
+    "hold": 197.0,
+    "factor": 4.04,
+    "ramp": 32.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 622,
+    "duration": 163,
+    "cpu": 29.2,
+    "target": "postgres",
+    "mem": 37.3
+   },
+   {
+    "start": 945,
+    "duration": 48,
+    "cpu": 36.0,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cac029",
+  "kind": "fault",
+  "index": 31,
+  "wall_start": 1788280320.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 605.0,
+  "fault_end": 945.0,
+  "impact_start": 610.0,
+  "intensity": 0.849,
+  "ramp": 2.7711078027527742,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 830,
+    "duration": 42,
+    "cpu": 36.0,
+    "target": "order",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "db_013",
+  "kind": "fault",
+  "index": 32,
+  "wall_start": 1788282240.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 640.0,
+  "fault_end": 950.0,
+  "impact_start": 665.0,
+  "intensity": 0.816,
+  "ramp": 165.6258890888925,
+  "spikes": [
+   {
+    "start": 635.0,
+    "hold": 112.0,
+    "factor": 3.41,
+    "ramp": 35.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "n019",
+  "kind": "normal",
+  "index": 33,
+  "wall_start": 1788284160.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 488,
+    "duration": 168,
+    "cpu": 22.6,
+    "target": "postgres",
+    "mem": 34.5
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cac030",
+  "kind": "fault",
+  "index": 34,
+  "wall_start": 1788286080.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 450.0,
+  "fault_end": 875.0,
+  "impact_start": 455.0,
+  "intensity": 0.971,
+  "ramp": 3.6902308092186358,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 1348,
+    "duration": 100,
+    "cpu": 22.4,
+    "target": "postgres",
+    "mem": 41.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "n039",
+  "kind": "normal",
+  "index": 35,
+  "wall_start": 1788288000.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 190.0,
+    "hold": 195.0,
+    "factor": 2.02,
+    "ramp": 22.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "ser004",
+  "kind": "fault",
+  "index": 36,
+  "wall_start": 1788289920.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 680.0,
+  "fault_end": 1140.0,
+  "impact_start": 710.0,
+  "intensity": 0.796,
+  "ramp": 145.53223849886422,
+  "spikes": [
+   {
+    "start": 971.0,
+    "hold": 175.0,
+    "factor": 2.98,
+    "ramp": 22.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 862,
+    "duration": 119,
+    "cpu": 29.7,
+    "target": "postgres",
+    "mem": 36.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "ser030",
+  "kind": "fault",
+  "index": 37,
+  "wall_start": 1788291840.0,
+  "fault_type": "service_crash",
+  "target": "order",
+  "fault_start": 465.0,
+  "fault_end": 785.0,
+  "impact_start": 465.0,
+  "intensity": 0.784,
+  "ramp": 0.0,
+  "spikes": [
+   {
+    "start": 467.0,
+    "hold": 105.0,
+    "factor": 3.37,
+    "ramp": 35.0
+   },
+   {
+    "start": 1161.0,
+    "hold": 100.0,
+    "factor": 2.94,
+    "ramp": 20.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 638,
+    "duration": 111,
+    "cpu": 24.6,
+    "target": "postgres",
+    "mem": 33.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cac007",
+  "kind": "fault",
+  "index": 38,
+  "wall_start": 1788293760.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 575.0,
+  "fault_end": 1070.0,
+  "impact_start": 580.0,
+  "intensity": 0.793,
+  "ramp": 4.084204553472052,
+  "spikes": [
+   {
+    "start": 547.0,
+    "hold": 101.0,
+    "factor": 3.18,
+    "ramp": 22.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 260,
+    "duration": 115,
+    "cpu": 44.4,
+    "target": "auth",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "net002",
+  "kind": "fault",
+  "index": 39,
+  "wall_start": 1788295680.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 670.0,
+  "fault_end": 1150.0,
+  "impact_start": null,
+  "intensity": 0.328,
+  "ramp": 21.893205541603127,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 544,
+    "duration": 152,
+    "cpu": 19.7,
+    "target": "postgres",
+    "mem": 32.1
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu001",
+  "kind": "fault",
+  "index": 40,
+  "wall_start": 1788297600.0,
+  "fault_type": "cpu_saturation",
+  "target": "redis",
+  "fault_start": 480.0,
+  "fault_end": 740.0,
+  "impact_start": null,
+  "intensity": 0.792,
+  "ramp": 90.94244600096425,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 1356,
+    "duration": 114,
+    "cpu": 24.7,
+    "target": "postgres",
+    "mem": 32.3
+   },
+   {
+    "start": 1240,
+    "duration": 117,
+    "cpu": 27.5,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "db_017",
+  "kind": "fault",
+  "index": 41,
+  "wall_start": 1788299520.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 390.0,
+  "fault_end": 915.0,
+  "impact_start": null,
+  "intensity": 0.519,
+  "ramp": 164.13520085636188,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 1042,
+    "duration": 179,
+    "cpu": 26.7,
+    "target": "postgres",
+    "mem": 33.3
+   },
+   {
+    "start": 1433,
+    "duration": 106,
+    "cpu": 36.2,
+    "target": "auth",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu000",
+  "kind": "fault",
+  "index": 42,
+  "wall_start": 1788301440.0,
+  "fault_type": "cpu_saturation",
+  "target": "postgres",
+  "fault_start": 600.0,
+  "fault_end": 875.0,
+  "impact_start": 840.0,
+  "intensity": 0.725,
+  "ramp": 184.404568364725,
+  "spikes": [
+   {
+    "start": 814.0,
+    "hold": 141.0,
+    "factor": 3.88,
+    "ramp": 18.0
+   },
+   {
+    "start": 552.0,
+    "hold": 76.0,
+    "factor": 2.07,
+    "ramp": 21.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 897,
+    "duration": 184,
+    "cpu": 26.2,
+    "target": "postgres",
+    "mem": 32.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu013",
+  "kind": "fault",
+  "index": 43,
+  "wall_start": 1788303360.0,
+  "fault_type": "cpu_saturation",
+  "target": "auth",
+  "fault_start": 445.0,
+  "fault_end": 930.0,
+  "impact_start": 540.0,
+  "intensity": 0.919,
+  "ramp": 180.3869091779682,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 511,
+    "duration": 77,
+    "cpu": 17.8,
+    "target": "postgres",
+    "mem": 41.5
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "n023",
+  "kind": "normal",
+  "index": 44,
+  "wall_start": 1788305280.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 641.0,
+    "hold": 136.0,
+    "factor": 4.78,
+    "ramp": 24.0
+   },
+   {
+    "start": 587.0,
+    "hold": 121.0,
+    "factor": 2.08,
+    "ramp": 26.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "mem014",
+  "kind": "fault",
+  "index": 45,
+  "wall_start": 1788307200.0,
+  "fault_type": "memory_leak",
+  "target": "redis",
+  "fault_start": 690.0,
+  "fault_end": 1065.0,
+  "impact_start": null,
+  "intensity": 0.297,
+  "ramp": 388.87064680182493,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 761,
+    "duration": 185,
+    "cpu": 24.4,
+    "target": "postgres",
+    "mem": 32.3
+   },
+   {
+    "start": 1037,
+    "duration": 119,
+    "cpu": 42.2,
+    "target": "auth",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "mem022",
+  "kind": "fault",
+  "index": 46,
+  "wall_start": 1788309120.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 615.0,
+  "fault_end": 880.0,
+  "impact_start": 705.0,
+  "intensity": 0.845,
+  "ramp": 209.7319917846612,
+  "spikes": [
+   {
+    "start": 672.0,
+    "hold": 102.0,
+    "factor": 3.02,
+    "ramp": 33.0
+   },
+   {
+    "start": 1415.0,
+    "hold": 71.0,
+    "factor": 3.02,
+    "ramp": 29.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1387,
+    "duration": 96,
+    "cpu": 22.7,
+    "target": "postgres",
+    "mem": 37.6
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "mem033",
+  "kind": "fault",
+  "index": 47,
+  "wall_start": 1788311040.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 585.0,
+  "fault_end": 1015.0,
+  "impact_start": 650.0,
+  "intensity": 0.898,
+  "ramp": 226.64177404492995,
+  "spikes": [
+   {
+    "start": 622.0,
+    "hold": 71.0,
+    "factor": 2.84,
+    "ramp": 39.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 926,
+    "duration": 115,
+    "cpu": 33.8,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cac033",
+  "kind": "fault",
+  "index": 48,
+  "wall_start": 1788312960.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 615.0,
+  "fault_end": 910.0,
+  "impact_start": 625.0,
+  "intensity": 0.565,
+  "ramp": 5.466679432582225,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 715,
+    "duration": 171,
+    "cpu": 23.6,
+    "target": "postgres",
+    "mem": 32.7
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cac013",
+  "kind": "fault",
+  "index": 49,
+  "wall_start": 1788314880.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 400.0,
+  "fault_end": 775.0,
+  "impact_start": 405.0,
+  "intensity": 0.958,
+  "ramp": 1.0286664810508217,
+  "spikes": [
+   {
+    "start": 382.0,
+    "hold": 178.0,
+    "factor": 3.57,
+    "ramp": 36.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "net005",
+  "kind": "fault",
+  "index": 50,
+  "wall_start": 1788316800.0,
+  "fault_type": "network_latency",
+  "target": "auth",
+  "fault_start": 710.0,
+  "fault_end": 1230.0,
+  "impact_start": 750.0,
+  "intensity": 0.695,
+  "ramp": 110.13865483829356,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 348,
+    "duration": 163,
+    "cpu": 28.8,
+    "target": "postgres",
+    "mem": 27.8
+   },
+   {
+    "start": 1189,
+    "duration": 59,
+    "cpu": 44.6,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "net026",
+  "kind": "fault",
+  "index": 51,
+  "wall_start": 1788318720.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 485.0,
+  "fault_end": 920.0,
+  "impact_start": null,
+  "intensity": 0.498,
+  "ramp": 44.43729264122348,
+  "spikes": [
+   {
+    "start": 815.0,
+    "hold": 224.0,
+    "factor": 4.14,
+    "ramp": 20.0
+   },
+   {
+    "start": 901.0,
+    "hold": 196.0,
+    "factor": 2.71,
+    "ramp": 20.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "ser012",
+  "kind": "fault",
+  "index": 52,
+  "wall_start": 1788320640.0,
+  "fault_type": "service_crash",
+  "target": "postgres",
+  "fault_start": 545.0,
+  "fault_end": 820.0,
+  "impact_start": 545.0,
+  "intensity": 0.668,
+  "ramp": 0.0,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 1258,
+    "duration": 75,
+    "cpu": 18.4,
+    "target": "postgres",
+    "mem": 35.7
+   },
+   {
+    "start": 563,
+    "duration": 85,
+    "cpu": 29.4,
+    "target": "auth",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cac000",
+  "kind": "fault",
+  "index": 53,
+  "wall_start": 1788322560.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 530.0,
+  "fault_end": 925.0,
+  "impact_start": 535.0,
+  "intensity": 0.691,
+  "ramp": 11.446017149620234,
+  "spikes": [
+   {
+    "start": 617.0,
+    "hold": 133.0,
+    "factor": 4.63,
+    "ramp": 24.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 624,
+    "duration": 83,
+    "cpu": 27.4,
+    "target": "postgres",
+    "mem": 25.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu025",
+  "kind": "fault",
+  "index": 54,
+  "wall_start": 1788324480.0,
+  "fault_type": "cpu_saturation",
+  "target": "auth",
+  "fault_start": 545.0,
+  "fault_end": 935.0,
+  "impact_start": 775.0,
+  "intensity": 0.443,
+  "ramp": 52.2925710719699,
+  "spikes": [
+   {
+    "start": 734.0,
+    "hold": 151.0,
+    "factor": 2.4,
+    "ramp": 31.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 533,
+    "duration": 102,
+    "cpu": 15.7,
+    "target": "postgres",
+    "mem": 40.1
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cac011",
+  "kind": "fault",
+  "index": 55,
+  "wall_start": 1788326400.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 470.0,
+  "fault_end": 910.0,
+  "impact_start": 480.0,
+  "intensity": 0.7,
+  "ramp": 7.364700895684984,
+  "spikes": [
+   {
+    "start": 566.0,
+    "hold": 199.0,
+    "factor": 3.37,
+    "ramp": 23.0
+   },
+   {
+    "start": 400.0,
+    "hold": 92.0,
+    "factor": 2.78,
+    "ramp": 31.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 142,
+    "duration": 105,
+    "cpu": 26.8,
+    "target": "postgres",
+    "mem": 37.2
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "n035",
+  "kind": "normal",
+  "index": 56,
+  "wall_start": 1788328320.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 1406,
+    "duration": 112,
+    "cpu": 26.8,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "n036",
+  "kind": "normal",
+  "index": 57,
+  "wall_start": 1788330240.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 167.0,
+    "hold": 108.0,
+    "factor": 2.56,
+    "ramp": 33.0
+   },
+   {
+    "start": 1125.0,
+    "hold": 236.0,
+    "factor": 2.42,
+    "ramp": 27.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "net030",
+  "kind": "fault",
+  "index": 58,
+  "wall_start": 1788332160.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 365.0,
+  "fault_end": 890.0,
+  "impact_start": null,
+  "intensity": 0.616,
+  "ramp": 26.273143500958003,
+  "spikes": [
+   {
+    "start": 105.0,
+    "hold": 131.0,
+    "factor": 2.59,
+    "ramp": 28.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1347,
+    "duration": 72,
+    "cpu": 23.7,
+    "target": "postgres",
+    "mem": 29.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "net012",
+  "kind": "fault",
+  "index": 59,
+  "wall_start": 1788334080.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 655.0,
+  "fault_end": 1095.0,
+  "impact_start": 725.0,
+  "intensity": 0.812,
+  "ramp": 41.83393601642139,
+  "spikes": [],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "n018",
+  "kind": "normal",
+  "index": 60,
+  "wall_start": 1788336000.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 1177.0,
+    "hold": 87.0,
+    "factor": 3.1,
+    "ramp": 19.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 186,
+    "duration": 95,
+    "cpu": 35.6,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "ser034",
+  "kind": "fault",
+  "index": 61,
+  "wall_start": 1788337920.0,
+  "fault_type": "service_crash",
+  "target": "payment",
+  "fault_start": 410.0,
+  "fault_end": 760.0,
+  "impact_start": 410.0,
+  "intensity": 0.703,
+  "ramp": 0.0,
+  "spikes": [
+   {
+    "start": 1102.0,
+    "hold": 141.0,
+    "factor": 3.18,
+    "ramp": 36.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1466,
+    "duration": 177,
+    "cpu": 19.6,
+    "target": "postgres",
+    "mem": 30.3
+   },
+   {
+    "start": 193,
+    "duration": 42,
+    "cpu": 28.3,
+    "target": "order",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "n031",
+  "kind": "normal",
+  "index": 62,
+  "wall_start": 1788339840.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 610.0,
+    "hold": 145.0,
+    "factor": 1.8,
+    "ramp": 28.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 807,
+    "duration": 61,
+    "cpu": 19.0,
+    "target": "postgres",
+    "mem": 26.5
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "mem029",
+  "kind": "fault",
+  "index": 63,
+  "wall_start": 1788341760.0,
+  "fault_type": "memory_leak",
+  "target": "payment",
+  "fault_start": 685.0,
+  "fault_end": 1010.0,
+  "impact_start": null,
+  "intensity": 0.455,
+  "ramp": 239.66900681956668,
+  "spikes": [
+   {
+    "start": 721.0,
+    "hold": 93.0,
+    "factor": 3.66,
+    "ramp": 18.0
+   },
+   {
+    "start": 103.0,
+    "hold": 77.0,
+    "factor": 3.66,
+    "ramp": 32.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 125,
+    "duration": 144,
+    "cpu": 23.6,
+    "target": "postgres",
+    "mem": 33.9
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "n014",
+  "kind": "normal",
+  "index": 64,
+  "wall_start": 1788343680.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 182.0,
+    "hold": 179.0,
+    "factor": 3.04,
+    "ramp": 38.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "cac024",
+  "kind": "fault",
+  "index": 65,
+  "wall_start": 1788345600.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 425.0,
+  "fault_end": 845.0,
+  "impact_start": 440.0,
+  "intensity": 0.555,
+  "ramp": 14.183943678597661,
+  "spikes": [],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "db_021",
+  "kind": "fault",
+  "index": 66,
+  "wall_start": 1788347520.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 390.0,
+  "fault_end": 855.0,
+  "impact_start": null,
+  "intensity": 0.478,
+  "ramp": 85.52160015092272,
+  "spikes": [
+   {
+    "start": 495.0,
+    "hold": 171.0,
+    "factor": 3.5,
+    "ramp": 24.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 291,
+    "duration": 114,
+    "cpu": 41.8,
+    "target": "order",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu029",
+  "kind": "fault",
+  "index": 67,
+  "wall_start": 1788349440.0,
+  "fault_type": "cpu_saturation",
+  "target": "payment",
+  "fault_start": 630.0,
+  "fault_end": 1085.0,
+  "impact_start": 970.0,
+  "intensity": 0.468,
+  "ramp": 112.05275813596224,
+  "spikes": [
+   {
+    "start": 922.0,
+    "hold": 97.0,
+    "factor": 2.09,
+    "ramp": 23.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 459,
+    "duration": 100,
+    "cpu": 25.7,
+    "target": "postgres",
+    "mem": 31.3
+   },
+   {
+    "start": 1450,
+    "duration": 80,
+    "cpu": 42.0,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "n043",
+  "kind": "normal",
+  "index": 68,
+  "wall_start": 1788351360.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 1096.0,
+    "hold": 69.0,
+    "factor": 3.04,
+    "ramp": 33.0
+   },
+   {
+    "start": 1144.0,
+    "hold": 176.0,
+    "factor": 3.04,
+    "ramp": 22.0
+   },
+   {
+    "start": 1395.0,
+    "hold": 83.0,
+    "factor": 1.95,
+    "ramp": 27.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1135,
+    "duration": 118,
+    "cpu": 30.2,
+    "target": "auth",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "mem031",
+  "kind": "fault",
+  "index": 69,
+  "wall_start": 1788353280.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 500.0,
+  "fault_end": 865.0,
+  "impact_start": null,
+  "intensity": 0.757,
+  "ramp": 166.70064845936514,
+  "spikes": [],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "n042",
+  "kind": "normal",
+  "index": 70,
+  "wall_start": 1788355200.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 1290.0,
+    "hold": 111.0,
+    "factor": 4.07,
+    "ramp": 16.0
+   },
+   {
+    "start": 974.0,
+    "hold": 87.0,
+    "factor": 3.79,
+    "ramp": 39.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1182,
+    "duration": 103,
+    "cpu": 33.6,
+    "target": "gateway",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu033",
+  "kind": "fault",
+  "index": 71,
+  "wall_start": 1788357120.0,
+  "fault_type": "cpu_saturation",
+  "target": "payment",
+  "fault_start": 625.0,
+  "fault_end": 915.0,
+  "impact_start": null,
+  "intensity": 0.588,
+  "ramp": 217.82512074883036,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 1157,
+    "duration": 106,
+    "cpu": 37.3,
+    "target": "auth",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "mem005",
+  "kind": "fault",
+  "index": 72,
+  "wall_start": 1788359040.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 405.0,
+  "fault_end": 880.0,
+  "impact_start": null,
+  "intensity": 0.822,
+  "ramp": 199.8908674335575,
+  "spikes": [],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "net011",
+  "kind": "fault",
+  "index": 73,
+  "wall_start": 1788360960.0,
+  "fault_type": "network_latency",
+  "target": "auth",
+  "fault_start": 375.0,
+  "fault_end": 750.0,
+  "impact_start": 410.0,
+  "intensity": 0.599,
+  "ramp": 69.37331570325111,
+  "spikes": [
+   {
+    "start": 490.0,
+    "hold": 235.0,
+    "factor": 2.75,
+    "ramp": 25.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1498,
+    "duration": 40,
+    "cpu": 37.2,
+    "target": "order",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "net019",
+  "kind": "fault",
+  "index": 74,
+  "wall_start": 1788362880.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 425.0,
+  "fault_end": 685.0,
+  "impact_start": 630.0,
+  "intensity": 0.763,
+  "ramp": 103.68844690988352,
+  "spikes": [
+   {
+    "start": 618.0,
+    "hold": 143.0,
+    "factor": 2.79,
+    "ramp": 17.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu028",
+  "kind": "fault",
+  "index": 75,
+  "wall_start": 1788364800.0,
+  "fault_type": "cpu_saturation",
+  "target": "auth",
+  "fault_start": 550.0,
+  "fault_end": 790.0,
+  "impact_start": 655.0,
+  "intensity": 0.422,
+  "ramp": 40.4348363318804,
+  "spikes": [
+   {
+    "start": 639.0,
+    "hold": 91.0,
+    "factor": 3.56,
+    "ramp": 16.0
+   },
+   {
+    "start": 293.0,
+    "hold": 236.0,
+    "factor": 3.67,
+    "ramp": 33.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 294,
+    "duration": 150,
+    "cpu": 15.6,
+    "target": "postgres",
+    "mem": 26.2
+   },
+   {
+    "start": 1299,
+    "duration": 101,
+    "cpu": 29.0,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "db_018",
+  "kind": "fault",
+  "index": 76,
+  "wall_start": 1788366720.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 590.0,
+  "fault_end": 995.0,
+  "impact_start": 725.0,
+  "intensity": 0.609,
+  "ramp": 164.20176598418905,
+  "spikes": [
+   {
+    "start": 825.0,
+    "hold": 181.0,
+    "factor": 2.21,
+    "ramp": 21.0
+   },
+   {
+    "start": 701.0,
+    "hold": 228.0,
+    "factor": 2.95,
+    "ramp": 24.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1339,
+    "duration": 80,
+    "cpu": 23.4,
+    "target": "postgres",
+    "mem": 30.7
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "net000",
+  "kind": "fault",
+  "index": 77,
+  "wall_start": 1788368640.0,
+  "fault_type": "network_latency",
+  "target": "auth",
+  "fault_start": 490.0,
+  "fault_end": 960.0,
+  "impact_start": 500.0,
+  "intensity": 0.899,
+  "ramp": 37.7620666061042,
+  "spikes": [],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "mem026",
+  "kind": "fault",
+  "index": 78,
+  "wall_start": 1788370560.0,
+  "fault_type": "memory_leak",
+  "target": "auth",
+  "fault_start": 455.0,
+  "fault_end": 765.0,
+  "impact_start": null,
+  "intensity": 0.57,
+  "ramp": 373.1465169445567,
+  "spikes": [
+   {
+    "start": 549.0,
+    "hold": 151.0,
+    "factor": 3.72,
+    "ramp": 28.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "db_009",
+  "kind": "fault",
+  "index": 79,
+  "wall_start": 1788372480.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 375.0,
+  "fault_end": 895.0,
+  "impact_start": 450.0,
+  "intensity": 0.622,
+  "ramp": 97.85079723163611,
+  "spikes": [
+   {
+    "start": 582.0,
+    "hold": 203.0,
+    "factor": 4.43,
+    "ramp": 21.0
+   },
+   {
+    "start": 329.0,
+    "hold": 235.0,
+    "factor": 2.88,
+    "ramp": 22.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 847,
+    "duration": 71,
+    "cpu": 33.1,
+    "target": "gateway",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "n017",
+  "kind": "normal",
+  "index": 80,
+  "wall_start": 1788374400.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 904.0,
+    "hold": 107.0,
+    "factor": 2.52,
+    "ramp": 25.0
+   },
+   {
+    "start": 1370.0,
+    "hold": 124.0,
+    "factor": 2.19,
+    "ramp": 26.0
+   },
+   {
+    "start": 1362.0,
+    "hold": 136.0,
+    "factor": 3.55,
+    "ramp": 38.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "net028",
+  "kind": "fault",
+  "index": 81,
+  "wall_start": 1788376320.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 400.0,
+  "fault_end": 690.0,
+  "impact_start": 455.0,
+  "intensity": 0.923,
+  "ramp": 56.809714480374566,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 1119,
+    "duration": 99,
+    "cpu": 32.2,
+    "target": "gateway",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu007",
+  "kind": "fault",
+  "index": 82,
+  "wall_start": 1788378240.0,
+  "fault_type": "cpu_saturation",
+  "target": "order",
+  "fault_start": 595.0,
+  "fault_end": 990.0,
+  "impact_start": null,
+  "intensity": 0.518,
+  "ramp": 124.97037099767329,
+  "spikes": [
+   {
+    "start": 594.0,
+    "hold": 75.0,
+    "factor": 2.13,
+    "ramp": 26.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "mem020",
+  "kind": "fault",
+  "index": 83,
+  "wall_start": 1788380160.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 570.0,
+  "fault_end": 865.0,
+  "impact_start": 615.0,
+  "intensity": 0.409,
+  "ramp": 205.6750890731067,
+  "spikes": [
+   {
+    "start": 579.0,
+    "hold": 68.0,
+    "factor": 3.35,
+    "ramp": 40.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 986,
+    "duration": 170,
+    "cpu": 17.3,
+    "target": "postgres",
+    "mem": 35.2
+   },
+   {
+    "start": 827,
+    "duration": 42,
+    "cpu": 25.7,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "ser006",
+  "kind": "fault",
+  "index": 84,
+  "wall_start": 1788382080.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 425.0,
+  "fault_end": 760.0,
+  "impact_start": 425.0,
+  "intensity": 0.827,
+  "ramp": 0.0,
+  "spikes": [
+   {
+    "start": 476.0,
+    "hold": 97.0,
+    "factor": 2.96,
+    "ramp": 38.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "n015",
+  "kind": "normal",
+  "index": 85,
+  "wall_start": 1788384000.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 539.0,
+    "hold": 204.0,
+    "factor": 3.07,
+    "ramp": 39.0
+   },
+   {
+    "start": 638.0,
+    "hold": 230.0,
+    "factor": 2.99,
+    "ramp": 33.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 278,
+    "duration": 81,
+    "cpu": 28.6,
+    "target": "postgres",
+    "mem": 38.7
+   },
+   {
+    "start": 1257,
+    "duration": 118,
+    "cpu": 38.1,
+    "target": "order",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "db_033",
+  "kind": "fault",
+  "index": 86,
+  "wall_start": 1788385920.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 700.0,
+  "fault_end": 1145.0,
+  "impact_start": 875.0,
+  "intensity": 0.442,
+  "ramp": 147.1881547632146,
+  "spikes": [
+   {
+    "start": 838.0,
+    "hold": 71.0,
+    "factor": 3.1,
+    "ramp": 23.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "cac034",
+  "kind": "fault",
+  "index": 87,
+  "wall_start": 1788387840.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 545.0,
+  "fault_end": 830.0,
+  "impact_start": 550.0,
+  "intensity": 0.364,
+  "ramp": 3.3578074078508644,
+  "spikes": [
+   {
+    "start": 643.0,
+    "hold": 226.0,
+    "factor": 3.48,
+    "ramp": 33.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "db_010",
+  "kind": "fault",
+  "index": 88,
+  "wall_start": 1788389760.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 690.0,
+  "fault_end": 1095.0,
+  "impact_start": 765.0,
+  "intensity": 0.691,
+  "ramp": 128.01354819289668,
+  "spikes": [
+   {
+    "start": 751.0,
+    "hold": 83.0,
+    "factor": 4.04,
+    "ramp": 20.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "n025",
+  "kind": "normal",
+  "index": 89,
+  "wall_start": 1788391680.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 882.0,
+    "hold": 186.0,
+    "factor": 4.09,
+    "ramp": 17.0
+   },
+   {
+    "start": 1051.0,
+    "hold": 137.0,
+    "factor": 1.97,
+    "ramp": 17.0
+   },
+   {
+    "start": 974.0,
+    "hold": 204.0,
+    "factor": 4.09,
+    "ramp": 17.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1308,
+    "duration": 76,
+    "cpu": 31.8,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cac001",
+  "kind": "fault",
+  "index": 90,
+  "wall_start": 1788393600.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 530.0,
+  "fault_end": 935.0,
+  "impact_start": 535.0,
+  "intensity": 0.573,
+  "ramp": 5.215136191318807,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 550,
+    "duration": 165,
+    "cpu": 17.5,
+    "target": "postgres",
+    "mem": 32.2
+   },
+   {
+    "start": 1247,
+    "duration": 103,
+    "cpu": 30.1,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu017",
+  "kind": "fault",
+  "index": 91,
+  "wall_start": 1788395520.0,
+  "fault_type": "cpu_saturation",
+  "target": "payment",
+  "fault_start": 460.0,
+  "fault_end": 855.0,
+  "impact_start": 660.0,
+  "intensity": 0.866,
+  "ramp": 222.2990696358409,
+  "spikes": [
+   {
+    "start": 662.0,
+    "hold": 76.0,
+    "factor": 3.62,
+    "ramp": 33.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu015",
+  "kind": "fault",
+  "index": 92,
+  "wall_start": 1788397440.0,
+  "fault_type": "cpu_saturation",
+  "target": "redis",
+  "fault_start": 495.0,
+  "fault_end": 920.0,
+  "impact_start": null,
+  "intensity": 0.705,
+  "ramp": 205.71190757883244,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 329,
+    "duration": 157,
+    "cpu": 21.1,
+    "target": "postgres",
+    "mem": 29.8
+   },
+   {
+    "start": 1434,
+    "duration": 65,
+    "cpu": 36.3,
+    "target": "order",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cac006",
+  "kind": "fault",
+  "index": 93,
+  "wall_start": 1788399360.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 400.0,
+  "fault_end": 830.0,
+  "impact_start": 410.0,
+  "intensity": 0.734,
+  "ramp": 10.845423896321922,
+  "spikes": [],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "ser005",
+  "kind": "fault",
+  "index": 94,
+  "wall_start": 1788401280.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 710.0,
+  "fault_end": 1060.0,
+  "impact_start": 710.0,
+  "intensity": 0.438,
+  "ramp": 0.0,
+  "spikes": [],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "mem028",
+  "kind": "fault",
+  "index": 95,
+  "wall_start": 1788403200.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 665.0,
+  "fault_end": 1165.0,
+  "impact_start": 820.0,
+  "intensity": 0.828,
+  "ramp": 163.5499067842132,
+  "spikes": [
+   {
+    "start": 915.0,
+    "hold": 61.0,
+    "factor": 2.91,
+    "ramp": 28.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1100,
+    "duration": 105,
+    "cpu": 42.3,
+    "target": "order",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "mem016",
+  "kind": "fault",
+  "index": 96,
+  "wall_start": 1788405120.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 625.0,
+  "fault_end": 915.0,
+  "impact_start": 715.0,
+  "intensity": 0.362,
+  "ramp": 266.8006060187852,
+  "spikes": [
+   {
+    "start": 689.0,
+    "hold": 176.0,
+    "factor": 4.19,
+    "ramp": 31.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "db_001",
+  "kind": "fault",
+  "index": 97,
+  "wall_start": 1788407040.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 580.0,
+  "fault_end": 925.0,
+  "impact_start": 625.0,
+  "intensity": 0.58,
+  "ramp": 32.035482896847455,
+  "spikes": [
+   {
+    "start": 594.0,
+    "hold": 96.0,
+    "factor": 3.72,
+    "ramp": 30.0
+   },
+   {
+    "start": 197.0,
+    "hold": 214.0,
+    "factor": 3.72,
+    "ramp": 38.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 983,
+    "duration": 91,
+    "cpu": 39.1,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "net032",
+  "kind": "fault",
+  "index": 98,
+  "wall_start": 1788408960.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 535.0,
+  "fault_end": 925.0,
+  "impact_start": null,
+  "intensity": 0.659,
+  "ramp": 111.2698934877359,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 1104,
+    "duration": 68,
+    "cpu": 28.2,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "ser032",
+  "kind": "fault",
+  "index": 99,
+  "wall_start": 1788410880.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 380.0,
+  "fault_end": 675.0,
+  "impact_start": 445.0,
+  "intensity": 0.694,
+  "ramp": 121.06668264732677,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 956,
+    "duration": 200,
+    "cpu": 28.9,
+    "target": "postgres",
+    "mem": 31.4
+   },
+   {
+    "start": 705,
+    "duration": 44,
+    "cpu": 35.4,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "net010",
+  "kind": "fault",
+  "index": 100,
+  "wall_start": 1788412800.0,
+  "fault_type": "network_latency",
+  "target": "order",
+  "fault_start": 705.0,
+  "fault_end": 970.0,
+  "impact_start": 725.0,
+  "intensity": 0.869,
+  "ramp": 48.78788928103941,
+  "spikes": [],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu009",
+  "kind": "fault",
+  "index": 101,
+  "wall_start": 1788414720.0,
+  "fault_type": "cpu_saturation",
+  "target": "redis",
+  "fault_start": 685.0,
+  "fault_end": 1025.0,
+  "impact_start": null,
+  "intensity": 0.488,
+  "ramp": 77.78046019213127,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 1110,
+    "duration": 143,
+    "cpu": 27.1,
+    "target": "postgres",
+    "mem": 41.1
+   },
+   {
+    "start": 1256,
+    "duration": 49,
+    "cpu": 39.3,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "n012",
+  "kind": "normal",
+  "index": 102,
+  "wall_start": 1788416640.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 1478.0,
+    "hold": 213.0,
+    "factor": 3.53,
+    "ramp": 35.0
+   },
+   {
+    "start": 1125.0,
+    "hold": 101.0,
+    "factor": 3.53,
+    "ramp": 28.0
+   },
+   {
+    "start": 102.0,
+    "hold": 65.0,
+    "factor": 2.87,
+    "ramp": 22.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1070,
+    "duration": 194,
+    "cpu": 21.7,
+    "target": "postgres",
+    "mem": 40.9
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "n027",
+  "kind": "normal",
+  "index": 103,
+  "wall_start": 1788418560.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 450.0,
+    "hold": 205.0,
+    "factor": 3.82,
+    "ramp": 40.0
+   },
+   {
+    "start": 87.0,
+    "hold": 151.0,
+    "factor": 1.91,
+    "ramp": 39.0
+   },
+   {
+    "start": 414.0,
+    "hold": 140.0,
+    "factor": 3.34,
+    "ramp": 31.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu012",
+  "kind": "fault",
+  "index": 104,
+  "wall_start": 1788420480.0,
+  "fault_type": "cpu_saturation",
+  "target": "order",
+  "fault_start": 525.0,
+  "fault_end": 1030.0,
+  "impact_start": 680.0,
+  "intensity": 0.396,
+  "ramp": 103.494808241773,
+  "spikes": [
+   {
+    "start": 672.0,
+    "hold": 193.0,
+    "factor": 3.5,
+    "ramp": 20.0
+   },
+   {
+    "start": 281.0,
+    "hold": 219.0,
+    "factor": 2.54,
+    "ramp": 29.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "mem000",
+  "kind": "fault",
+  "index": 105,
+  "wall_start": 1788422400.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 505.0,
+  "fault_end": 980.0,
+  "impact_start": null,
+  "intensity": 0.682,
+  "ramp": 191.10169010696217,
+  "spikes": [],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "cac017",
+  "kind": "fault",
+  "index": 106,
+  "wall_start": 1788424320.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 590.0,
+  "fault_end": 845.0,
+  "impact_start": 590.0,
+  "intensity": 0.466,
+  "ramp": 0.0757885259378166,
+  "spikes": [
+   {
+    "start": 720.0,
+    "hold": 181.0,
+    "factor": 2.52,
+    "ramp": 16.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 548,
+    "duration": 168,
+    "cpu": 27.9,
+    "target": "postgres",
+    "mem": 41.2
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu005",
+  "kind": "fault",
+  "index": 107,
+  "wall_start": 1788426240.0,
+  "fault_type": "cpu_saturation",
+  "target": "payment",
+  "fault_start": 655.0,
+  "fault_end": 965.0,
+  "impact_start": null,
+  "intensity": 0.629,
+  "ramp": 233.14348951218417,
+  "spikes": [],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "cac021",
+  "kind": "fault",
+  "index": 108,
+  "wall_start": 1788428160.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 515.0,
+  "fault_end": 785.0,
+  "impact_start": 530.0,
+  "intensity": 0.816,
+  "ramp": 11.158491620192098,
+  "spikes": [
+   {
+    "start": 662.0,
+    "hold": 88.0,
+    "factor": 3.37,
+    "ramp": 31.0
+   },
+   {
+    "start": 531.0,
+    "hold": 238.0,
+    "factor": 3.05,
+    "ramp": 28.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "db_026",
+  "kind": "fault",
+  "index": 109,
+  "wall_start": 1788430080.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 570.0,
+  "fault_end": 975.0,
+  "impact_start": 825.0,
+  "intensity": 0.663,
+  "ramp": 173.81621072886293,
+  "spikes": [
+   {
+    "start": 425.0,
+    "hold": 77.0,
+    "factor": 4.39,
+    "ramp": 28.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 785,
+    "duration": 138,
+    "cpu": 18.4,
+    "target": "postgres",
+    "mem": 34.7
+   },
+   {
+    "start": 818,
+    "duration": 87,
+    "cpu": 26.6,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "mem019",
+  "kind": "fault",
+  "index": 110,
+  "wall_start": 1788432000.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 390.0,
+  "fault_end": 795.0,
+  "impact_start": 680.0,
+  "intensity": 0.884,
+  "ramp": 352.0676153226299,
+  "spikes": [
+   {
+    "start": 1142.0,
+    "hold": 202.0,
+    "factor": 2.56,
+    "ramp": 26.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1229,
+    "duration": 168,
+    "cpu": 18.5,
+    "target": "postgres",
+    "mem": 34.9
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "ser023",
+  "kind": "fault",
+  "index": 111,
+  "wall_start": 1788433920.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 460.0,
+  "fault_end": 795.0,
+  "impact_start": 575.0,
+  "intensity": 0.52,
+  "ramp": 136.04561385051682,
+  "spikes": [
+   {
+    "start": 638.0,
+    "hold": 198.0,
+    "factor": 1.93,
+    "ramp": 20.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu034",
+  "kind": "fault",
+  "index": 112,
+  "wall_start": 1788435840.0,
+  "fault_type": "cpu_saturation",
+  "target": "gateway",
+  "fault_start": 575.0,
+  "fault_end": 920.0,
+  "impact_start": 620.0,
+  "intensity": 0.662,
+  "ramp": 235.51294903406105,
+  "spikes": [
+   {
+    "start": 607.0,
+    "hold": 87.0,
+    "factor": 3.36,
+    "ramp": 19.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 483,
+    "duration": 75,
+    "cpu": 28.7,
+    "target": "postgres",
+    "mem": 29.8
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cac020",
+  "kind": "fault",
+  "index": 113,
+  "wall_start": 1788437760.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 510.0,
+  "fault_end": 1015.0,
+  "impact_start": 515.0,
+  "intensity": 0.8,
+  "ramp": 0.803129098426264,
+  "spikes": [],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "net004",
+  "kind": "fault",
+  "index": 114,
+  "wall_start": 1788439680.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 640.0,
+  "fault_end": 975.0,
+  "impact_start": 790.0,
+  "intensity": 0.809,
+  "ramp": 41.90764992578225,
+  "spikes": [
+   {
+    "start": 745.0,
+    "hold": 178.0,
+    "factor": 1.83,
+    "ramp": 34.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "n007",
+  "kind": "normal",
+  "index": 115,
+  "wall_start": 1788441600.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 229.0,
+    "hold": 71.0,
+    "factor": 2.3,
+    "ramp": 34.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 447,
+    "duration": 115,
+    "cpu": 28.1,
+    "target": "postgres",
+    "mem": 26.4
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "net003",
+  "kind": "fault",
+  "index": 116,
+  "wall_start": 1788443520.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 365.0,
+  "fault_end": 670.0,
+  "impact_start": null,
+  "intensity": 0.746,
+  "ramp": 82.64895466971153,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 1474,
+    "duration": 140,
+    "cpu": 18.5,
+    "target": "postgres",
+    "mem": 35.5
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "n032",
+  "kind": "normal",
+  "index": 117,
+  "wall_start": 1788445440.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 395.0,
+    "hold": 165.0,
+    "factor": 2.71,
+    "ramp": 28.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "db_030",
+  "kind": "fault",
+  "index": 118,
+  "wall_start": 1788447360.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 450.0,
+  "fault_end": 990.0,
+  "impact_start": 585.0,
+  "intensity": 0.807,
+  "ramp": 170.18675358610878,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 355,
+    "duration": 105,
+    "cpu": 38.6,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "mem021",
+  "kind": "fault",
+  "index": 119,
+  "wall_start": 1788449280.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 435.0,
+  "fault_end": 955.0,
+  "impact_start": 665.0,
+  "intensity": 0.578,
+  "ramp": 297.4575933688272,
+  "spikes": [
+   {
+    "start": 571.0,
+    "hold": 239.0,
+    "factor": 3.64,
+    "ramp": 24.0
+   },
+   {
+    "start": 592.0,
+    "hold": 187.0,
+    "factor": 1.9,
+    "ramp": 27.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "net016",
+  "kind": "fault",
+  "index": 120,
+  "wall_start": 1788451200.0,
+  "fault_type": "network_latency",
+  "target": "auth",
+  "fault_start": 425.0,
+  "fault_end": 820.0,
+  "impact_start": 450.0,
+  "intensity": 0.588,
+  "ramp": 54.493582187019825,
+  "spikes": [
+   {
+    "start": 603.0,
+    "hold": 70.0,
+    "factor": 2.4,
+    "ramp": 19.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 554,
+    "duration": 94,
+    "cpu": 27.5,
+    "target": "postgres",
+    "mem": 26.6
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu016",
+  "kind": "fault",
+  "index": 121,
+  "wall_start": 1788453120.0,
+  "fault_type": "cpu_saturation",
+  "target": "payment",
+  "fault_start": 670.0,
+  "fault_end": 1210.0,
+  "impact_start": 830.0,
+  "intensity": 0.977,
+  "ramp": 220.89860948482072,
+  "spikes": [
+   {
+    "start": 935.0,
+    "hold": 126.0,
+    "factor": 2.07,
+    "ramp": 34.0
+   },
+   {
+    "start": 265.0,
+    "hold": 205.0,
+    "factor": 1.96,
+    "ramp": 25.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "n028",
+  "kind": "normal",
+  "index": 122,
+  "wall_start": 1788455040.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 1475.0,
+    "hold": 122.0,
+    "factor": 2.95,
+    "ramp": 36.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "db_005",
+  "kind": "fault",
+  "index": 123,
+  "wall_start": 1788456960.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 705.0,
+  "fault_end": 1090.0,
+  "impact_start": 980.0,
+  "intensity": 0.615,
+  "ramp": 83.72303390488997,
+  "spikes": [
+   {
+    "start": 968.0,
+    "hold": 152.0,
+    "factor": 3.09,
+    "ramp": 18.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "net013",
+  "kind": "fault",
+  "index": 124,
+  "wall_start": 1788458880.0,
+  "fault_type": "network_latency",
+  "target": "postgres",
+  "fault_start": 360.0,
+  "fault_end": 825.0,
+  "impact_start": 395.0,
+  "intensity": 0.833,
+  "ramp": 112.78090847374445,
+  "spikes": [
+   {
+    "start": 755.0,
+    "hold": 108.0,
+    "factor": 1.99,
+    "ramp": 31.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1216,
+    "duration": 153,
+    "cpu": 28.9,
+    "target": "postgres",
+    "mem": 38.0
+   },
+   {
+    "start": 1277,
+    "duration": 109,
+    "cpu": 32.0,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "db_022",
+  "kind": "fault",
+  "index": 125,
+  "wall_start": 1788460800.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 400.0,
+  "fault_end": 880.0,
+  "impact_start": 460.0,
+  "intensity": 0.909,
+  "ramp": 94.6949254504762,
+  "spikes": [
+   {
+    "start": 818.0,
+    "hold": 168.0,
+    "factor": 3.99,
+    "ramp": 31.0
+   },
+   {
+    "start": 259.0,
+    "hold": 175.0,
+    "factor": 2.48,
+    "ramp": 25.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "ser020",
+  "kind": "fault",
+  "index": 126,
+  "wall_start": 1788462720.0,
+  "fault_type": "service_crash",
+  "target": "postgres",
+  "fault_start": 710.0,
+  "fault_end": 1190.0,
+  "impact_start": 740.0,
+  "intensity": 0.693,
+  "ramp": 131.810016218702,
+  "spikes": [
+   {
+    "start": 86.0,
+    "hold": 196.0,
+    "factor": 2.26,
+    "ramp": 18.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "ser033",
+  "kind": "fault",
+  "index": 127,
+  "wall_start": 1788464640.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 390.0,
+  "fault_end": 710.0,
+  "impact_start": 390.0,
+  "intensity": 0.802,
+  "ramp": 0.0,
+  "spikes": [
+   {
+    "start": 500.0,
+    "hold": 92.0,
+    "factor": 4.71,
+    "ramp": 15.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 758,
+    "duration": 99,
+    "cpu": 35.7,
+    "target": "auth",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cac008",
+  "kind": "fault",
+  "index": 128,
+  "wall_start": 1788466560.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 550.0,
+  "fault_end": 885.0,
+  "impact_start": 555.0,
+  "intensity": 0.881,
+  "ramp": 0.2903984200095955,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 1208,
+    "duration": 162,
+    "cpu": 20.1,
+    "target": "postgres",
+    "mem": 33.4
+   },
+   {
+    "start": 1401,
+    "duration": 85,
+    "cpu": 26.0,
+    "target": "auth",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "net024",
+  "kind": "fault",
+  "index": 129,
+  "wall_start": 1788468480.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 435.0,
+  "fault_end": 700.0,
+  "impact_start": 650.0,
+  "intensity": 0.294,
+  "ramp": 72.31677854281568,
+  "spikes": [
+   {
+    "start": 622.0,
+    "hold": 84.0,
+    "factor": 3.93,
+    "ramp": 19.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "db_019",
+  "kind": "fault",
+  "index": 130,
+  "wall_start": 1788470400.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 420.0,
+  "fault_end": 860.0,
+  "impact_start": 755.0,
+  "intensity": 0.549,
+  "ramp": 74.13036292714057,
+  "spikes": [
+   {
+    "start": 475.0,
+    "hold": 71.0,
+    "factor": 2.88,
+    "ramp": 22.0
+   },
+   {
+    "start": 705.0,
+    "hold": 80.0,
+    "factor": 3.29,
+    "ramp": 23.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "net009",
+  "kind": "fault",
+  "index": 131,
+  "wall_start": 1788472320.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 430.0,
+  "fault_end": 860.0,
+  "impact_start": null,
+  "intensity": 0.593,
+  "ramp": 63.286762924411825,
+  "spikes": [
+   {
+    "start": 1438.0,
+    "hold": 235.0,
+    "factor": 2.13,
+    "ramp": 28.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 413,
+    "duration": 136,
+    "cpu": 24.5,
+    "target": "postgres",
+    "mem": 34.3
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "ser025",
+  "kind": "fault",
+  "index": 132,
+  "wall_start": 1788474240.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 715.0,
+  "fault_end": 1150.0,
+  "impact_start": 750.0,
+  "intensity": 0.701,
+  "ramp": 82.66267722307666,
+  "spikes": [
+   {
+    "start": 778.0,
+    "hold": 220.0,
+    "factor": 1.86,
+    "ramp": 38.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu003",
+  "kind": "fault",
+  "index": 133,
+  "wall_start": 1788476160.0,
+  "fault_type": "cpu_saturation",
+  "target": "gateway",
+  "fault_start": 405.0,
+  "fault_end": 815.0,
+  "impact_start": null,
+  "intensity": 0.347,
+  "ramp": 63.116104387064354,
+  "spikes": [
+   {
+    "start": 734.0,
+    "hold": 95.0,
+    "factor": 2.7,
+    "ramp": 22.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 852,
+    "duration": 199,
+    "cpu": 19.2,
+    "target": "postgres",
+    "mem": 30.4
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "mem008",
+  "kind": "fault",
+  "index": 134,
+  "wall_start": 1788478080.0,
+  "fault_type": "memory_leak",
+  "target": "redis",
+  "fault_start": 645.0,
+  "fault_end": 935.0,
+  "impact_start": null,
+  "intensity": 0.698,
+  "ramp": 300.2856118360078,
+  "spikes": [
+   {
+    "start": 663.0,
+    "hold": 209.0,
+    "factor": 2.16,
+    "ramp": 27.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu030",
+  "kind": "fault",
+  "index": 135,
+  "wall_start": 1788480000.0,
+  "fault_type": "cpu_saturation",
+  "target": "redis",
+  "fault_start": 370.0,
+  "fault_end": 765.0,
+  "impact_start": 370.0,
+  "intensity": 0.786,
+  "ramp": 136.9723758213397,
+  "spikes": [
+   {
+    "start": 305.0,
+    "hold": 60.0,
+    "factor": 3.24,
+    "ramp": 20.0
+   }
+  ],
+  "batches": [],
+  "split": "val"
+ },
+ {
+  "run_id": "db_027",
+  "kind": "fault",
+  "index": 136,
+  "wall_start": 1788481920.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 410.0,
+  "fault_end": 800.0,
+  "impact_start": 530.0,
+  "intensity": 0.683,
+  "ramp": 116.21787129124581,
+  "spikes": [
+   {
+    "start": 194.0,
+    "hold": 127.0,
+    "factor": 3.22,
+    "ramp": 30.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 158,
+    "duration": 96,
+    "cpu": 44.1,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "db_006",
+  "kind": "fault",
+  "index": 137,
+  "wall_start": 1788483840.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 550.0,
+  "fault_end": 1035.0,
+  "impact_start": 830.0,
+  "intensity": 0.552,
+  "ramp": 96.55279707951368,
+  "spikes": [
+   {
+    "start": 807.0,
+    "hold": 190.0,
+    "factor": 3.51,
+    "ramp": 32.0
+   },
+   {
+    "start": 1083.0,
+    "hold": 160.0,
+    "factor": 1.81,
+    "ramp": 38.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 122,
+    "duration": 42,
+    "cpu": 28.5,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "db_004",
+  "kind": "fault",
+  "index": 138,
+  "wall_start": 1788485760.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 720.0,
+  "fault_end": 1115.0,
+  "impact_start": 950.0,
+  "intensity": 0.724,
+  "ramp": 59.79827163271569,
+  "spikes": [
+   {
+    "start": 937.0,
+    "hold": 155.0,
+    "factor": 3.75,
+    "ramp": 17.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu011",
+  "kind": "fault",
+  "index": 139,
+  "wall_start": 1788487680.0,
+  "fault_type": "cpu_saturation",
+  "target": "payment",
+  "fault_start": 420.0,
+  "fault_end": 780.0,
+  "impact_start": 730.0,
+  "intensity": 0.706,
+  "ramp": 193.3866148810968,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 218,
+    "duration": 73,
+    "cpu": 22.5,
+    "target": "postgres",
+    "mem": 37.1
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "cac004",
+  "kind": "fault",
+  "index": 140,
+  "wall_start": 1788489600.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 615.0,
+  "fault_end": 1050.0,
+  "impact_start": 620.0,
+  "intensity": 0.523,
+  "ramp": 5.507278039563837,
+  "spikes": [
+   {
+    "start": 950.0,
+    "hold": 102.0,
+    "factor": 3.45,
+    "ramp": 33.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "net034",
+  "kind": "fault",
+  "index": 141,
+  "wall_start": 1788491520.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 565.0,
+  "fault_end": 1085.0,
+  "impact_start": 675.0,
+  "intensity": 0.669,
+  "ramp": 78.7216175462496,
+  "spikes": [
+   {
+    "start": 647.0,
+    "hold": 181.0,
+    "factor": 3.09,
+    "ramp": 35.0
+   }
+  ],
+  "batches": [],
+  "split": "val"
+ },
+ {
+  "run_id": "ser011",
+  "kind": "fault",
+  "index": 142,
+  "wall_start": 1788493440.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 405.0,
+  "fault_end": 855.0,
+  "impact_start": 475.0,
+  "intensity": 0.852,
+  "ramp": 109.21857092266575,
+  "spikes": [
+   {
+    "start": 382.0,
+    "hold": 77.0,
+    "factor": 2.44,
+    "ramp": 32.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "n006",
+  "kind": "normal",
+  "index": 143,
+  "wall_start": 1788495360.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 1490.0,
+    "hold": 208.0,
+    "factor": 3.74,
+    "ramp": 22.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "cac027",
+  "kind": "fault",
+  "index": 144,
+  "wall_start": 1788497280.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 430.0,
+  "fault_end": 850.0,
+  "impact_start": 435.0,
+  "intensity": 0.779,
+  "ramp": 2.8223557029822426,
+  "spikes": [
+   {
+    "start": 531.0,
+    "hold": 187.0,
+    "factor": 3.91,
+    "ramp": 36.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "cac032",
+  "kind": "fault",
+  "index": 145,
+  "wall_start": 1788499200.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 585.0,
+  "fault_end": 1040.0,
+  "impact_start": 595.0,
+  "intensity": 0.594,
+  "ramp": 14.253949693468666,
+  "spikes": [
+   {
+    "start": 850.0,
+    "hold": 90.0,
+    "factor": 2.78,
+    "ramp": 27.0
+   },
+   {
+    "start": 575.0,
+    "hold": 229.0,
+    "factor": 2.39,
+    "ramp": 20.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1300,
+    "duration": 106,
+    "cpu": 21.1,
+    "target": "postgres",
+    "mem": 32.6
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "n008",
+  "kind": "normal",
+  "index": 146,
+  "wall_start": 1788501120.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 461.0,
+    "hold": 135.0,
+    "factor": 3.08,
+    "ramp": 24.0
+   },
+   {
+    "start": 1439.0,
+    "hold": 87.0,
+    "factor": 3.08,
+    "ramp": 19.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 427,
+    "duration": 128,
+    "cpu": 23.8,
+    "target": "postgres",
+    "mem": 29.5
+   },
+   {
+    "start": 687,
+    "duration": 70,
+    "cpu": 36.3,
+    "target": "auth",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "ser015",
+  "kind": "fault",
+  "index": 147,
+  "wall_start": 1788503040.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 660.0,
+  "fault_end": 1090.0,
+  "impact_start": 660.0,
+  "intensity": 0.75,
+  "ramp": 0.0,
+  "spikes": [
+   {
+    "start": 672.0,
+    "hold": 193.0,
+    "factor": 2.86,
+    "ramp": 32.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1098,
+    "duration": 168,
+    "cpu": 20.1,
+    "target": "postgres",
+    "mem": 39.6
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "net023",
+  "kind": "fault",
+  "index": 148,
+  "wall_start": 1788504960.0,
+  "fault_type": "network_latency",
+  "target": "order",
+  "fault_start": 435.0,
+  "fault_end": 730.0,
+  "impact_start": 460.0,
+  "intensity": 0.914,
+  "ramp": 75.3542838500926,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 395,
+    "duration": 107,
+    "cpu": 27.9,
+    "target": "auth",
+    "mem": 0.0
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "cpu019",
+  "kind": "fault",
+  "index": 149,
+  "wall_start": 1788506880.0,
+  "fault_type": "cpu_saturation",
+  "target": "auth",
+  "fault_start": 595.0,
+  "fault_end": 970.0,
+  "impact_start": 630.0,
+  "intensity": 0.567,
+  "ramp": 82.13418473903033,
+  "spikes": [
+   {
+    "start": 848.0,
+    "hold": 211.0,
+    "factor": 3.66,
+    "ramp": 35.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 602,
+    "duration": 111,
+    "cpu": 27.0,
+    "target": "postgres",
+    "mem": 33.6
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "ser007",
+  "kind": "fault",
+  "index": 150,
+  "wall_start": 1788508800.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 460.0,
+  "fault_end": 860.0,
+  "impact_start": 520.0,
+  "intensity": 0.775,
+  "ramp": 104.24778078644552,
+  "spikes": [],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "mem011",
+  "kind": "fault",
+  "index": 151,
+  "wall_start": 1788510720.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 480.0,
+  "fault_end": 815.0,
+  "impact_start": null,
+  "intensity": 0.493,
+  "ramp": 352.75764844170465,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 521,
+    "duration": 40,
+    "cpu": 28.8,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "n033",
+  "kind": "normal",
+  "index": 152,
+  "wall_start": 1788512640.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 1103.0,
+    "hold": 176.0,
+    "factor": 2.25,
+    "ramp": 16.0
+   },
+   {
+    "start": 1344.0,
+    "hold": 173.0,
+    "factor": 3.28,
+    "ramp": 33.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 833,
+    "duration": 80,
+    "cpu": 41.7,
+    "target": "gateway",
+    "mem": 0.0
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "db_024",
+  "kind": "fault",
+  "index": 153,
+  "wall_start": 1788514560.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 520.0,
+  "fault_end": 930.0,
+  "impact_start": 590.0,
+  "intensity": 0.86,
+  "ramp": 70.11643832279573,
+  "spikes": [],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "n013",
+  "kind": "normal",
+  "index": 154,
+  "wall_start": 1788516480.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 375,
+    "duration": 89,
+    "cpu": 24.4,
+    "target": "postgres",
+    "mem": 40.3
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "cac016",
+  "kind": "fault",
+  "index": 155,
+  "wall_start": 1788518400.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 360.0,
+  "fault_end": 670.0,
+  "impact_start": 375.0,
+  "intensity": 0.916,
+  "ramp": 11.237347314552338,
+  "spikes": [
+   {
+    "start": 596.0,
+    "hold": 114.0,
+    "factor": 4.44,
+    "ramp": 30.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1420,
+    "duration": 62,
+    "cpu": 25.1,
+    "target": "postgres",
+    "mem": 37.9
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "n037",
+  "kind": "normal",
+  "index": 156,
+  "wall_start": 1788520320.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 346.0,
+    "hold": 168.0,
+    "factor": 3.28,
+    "ramp": 23.0
+   },
+   {
+    "start": 1058.0,
+    "hold": 172.0,
+    "factor": 3.28,
+    "ramp": 18.0
+   },
+   {
+    "start": 760.0,
+    "hold": 235.0,
+    "factor": 3.25,
+    "ramp": 17.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 785,
+    "duration": 159,
+    "cpu": 19.3,
+    "target": "postgres",
+    "mem": 32.9
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "ser024",
+  "kind": "fault",
+  "index": 157,
+  "wall_start": 1788522240.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 625.0,
+  "fault_end": 1105.0,
+  "impact_start": 680.0,
+  "intensity": 0.775,
+  "ramp": 132.21258328328196,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 521,
+    "duration": 68,
+    "cpu": 31.5,
+    "target": "gateway",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "n030",
+  "kind": "normal",
+  "index": 158,
+  "wall_start": 1788524160.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 1026.0,
+    "hold": 111.0,
+    "factor": 3.47,
+    "ramp": 21.0
+   },
+   {
+    "start": 722.0,
+    "hold": 88.0,
+    "factor": 2.68,
+    "ramp": 26.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1447,
+    "duration": 196,
+    "cpu": 23.2,
+    "target": "postgres",
+    "mem": 29.2
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "db_007",
+  "kind": "fault",
+  "index": 159,
+  "wall_start": 1788526080.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 680.0,
+  "fault_end": 1075.0,
+  "impact_start": null,
+  "intensity": 0.421,
+  "ramp": 173.26594039205347,
+  "spikes": [
+   {
+    "start": 1425.0,
+    "hold": 148.0,
+    "factor": 2.03,
+    "ramp": 27.0
+   }
+  ],
+  "batches": [],
+  "split": "train"
+ },
+ {
+  "run_id": "mem023",
+  "kind": "fault",
+  "index": 160,
+  "wall_start": 1788528000.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 410.0,
+  "fault_end": 875.0,
+  "impact_start": null,
+  "intensity": 0.657,
+  "ramp": 272.66534841328985,
+  "spikes": [
+   {
+    "start": 266.0,
+    "hold": 182.0,
+    "factor": 2.52,
+    "ramp": 15.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 150,
+    "duration": 114,
+    "cpu": 29.4,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "cac005",
+  "kind": "fault",
+  "index": 161,
+  "wall_start": 1788529920.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 590.0,
+  "fault_end": 1095.0,
+  "impact_start": 600.0,
+  "intensity": 0.384,
+  "ramp": 6.497228373144979,
+  "spikes": [
+   {
+    "start": 724.0,
+    "hold": 197.0,
+    "factor": 2.91,
+    "ramp": 23.0
+   }
+  ],
+  "batches": [],
+  "split": "val"
+ },
+ {
+  "run_id": "db_002",
+  "kind": "fault",
+  "index": 162,
+  "wall_start": 1788531840.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 635.0,
+  "fault_end": 1050.0,
+  "impact_start": 800.0,
+  "intensity": 0.62,
+  "ramp": 89.40739712836907,
+  "spikes": [
+   {
+    "start": 781.0,
+    "hold": 190.0,
+    "factor": 3.16,
+    "ramp": 22.0
+   }
+  ],
+  "batches": [],
+  "split": "val"
+ },
+ {
+  "run_id": "net022",
+  "kind": "fault",
+  "index": 163,
+  "wall_start": 1788533760.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 650.0,
+  "fault_end": 950.0,
+  "impact_start": null,
+  "intensity": 0.364,
+  "ramp": 28.244961784772457,
+  "spikes": [
+   {
+    "start": 835.0,
+    "hold": 112.0,
+    "factor": 2.62,
+    "ramp": 33.0
+   }
+  ],
+  "batches": [],
+  "split": "val"
+ },
+ {
+  "run_id": "ser019",
+  "kind": "fault",
+  "index": 164,
+  "wall_start": 1788535680.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 565.0,
+  "fault_end": 1020.0,
+  "impact_start": 565.0,
+  "intensity": 0.744,
+  "ramp": 0.0,
+  "spikes": [
+   {
+    "start": 697.0,
+    "hold": 186.0,
+    "factor": 3.29,
+    "ramp": 35.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 893,
+    "duration": 164,
+    "cpu": 18.4,
+    "target": "postgres",
+    "mem": 37.6
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "ser014",
+  "kind": "fault",
+  "index": 165,
+  "wall_start": 1788537600.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 450.0,
+  "fault_end": 885.0,
+  "impact_start": 515.0,
+  "intensity": 0.631,
+  "ramp": 121.12278610329656,
+  "spikes": [
+   {
+    "start": 728.0,
+    "hold": 74.0,
+    "factor": 2.3,
+    "ramp": 37.0
+   },
+   {
+    "start": 1198.0,
+    "hold": 194.0,
+    "factor": 3.49,
+    "ramp": 34.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1158,
+    "duration": 177,
+    "cpu": 19.4,
+    "target": "postgres",
+    "mem": 38.4
+   },
+   {
+    "start": 1135,
+    "duration": 89,
+    "cpu": 25.3,
+    "target": "order",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "db_020",
+  "kind": "fault",
+  "index": 166,
+  "wall_start": 1788539520.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 375.0,
+  "fault_end": 755.0,
+  "impact_start": null,
+  "intensity": 0.647,
+  "ramp": 87.88025714246257,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 603,
+    "duration": 47,
+    "cpu": 30.7,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "db_014",
+  "kind": "fault",
+  "index": 167,
+  "wall_start": 1788541440.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 680.0,
+  "fault_end": 1180.0,
+  "impact_start": 725.0,
+  "intensity": 0.861,
+  "ramp": 58.260712455467555,
+  "spikes": [
+   {
+    "start": 960.0,
+    "hold": 186.0,
+    "factor": 3.04,
+    "ramp": 21.0
+   }
+  ],
+  "batches": [],
+  "split": "val"
+ },
+ {
+  "run_id": "db_016",
+  "kind": "fault",
+  "index": 168,
+  "wall_start": 1788543360.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 400.0,
+  "fault_end": 870.0,
+  "impact_start": 735.0,
+  "intensity": 0.624,
+  "ramp": 172.78515436436007,
+  "spikes": [
+   {
+    "start": 712.0,
+    "hold": 122.0,
+    "factor": 2.76,
+    "ramp": 38.0
+   }
+  ],
+  "batches": [],
+  "split": "val"
+ },
+ {
+  "run_id": "cpu008",
+  "kind": "fault",
+  "index": 169,
+  "wall_start": 1788545280.0,
+  "fault_type": "cpu_saturation",
+  "target": "payment",
+  "fault_start": 655.0,
+  "fault_end": 1140.0,
+  "impact_start": 1050.0,
+  "intensity": 0.642,
+  "ramp": 76.66691765324032,
+  "spikes": [
+   {
+    "start": 1033.0,
+    "hold": 65.0,
+    "factor": 2.89,
+    "ramp": 25.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 149,
+    "duration": 45,
+    "cpu": 43.4,
+    "target": "order",
+    "mem": 0.0
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "ser013",
+  "kind": "fault",
+  "index": 170,
+  "wall_start": 1788547200.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 650.0,
+  "fault_end": 1050.0,
+  "impact_start": 695.0,
+  "intensity": 0.723,
+  "ramp": 146.48732860820252,
+  "spikes": [
+   {
+    "start": 888.0,
+    "hold": 165.0,
+    "factor": 3.15,
+    "ramp": 25.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1315,
+    "duration": 120,
+    "cpu": 41.1,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "train"
+ },
+ {
+  "run_id": "cpu027",
+  "kind": "fault",
+  "index": 171,
+  "wall_start": 1788549120.0,
+  "fault_type": "cpu_saturation",
+  "target": "redis",
+  "fault_start": 695.0,
+  "fault_end": 1205.0,
+  "impact_start": null,
+  "intensity": 0.594,
+  "ramp": 92.45432224087689,
+  "spikes": [
+   {
+    "start": 1104.0,
+    "hold": 95.0,
+    "factor": 2.28,
+    "ramp": 25.0
+   }
+  ],
+  "batches": [],
+  "split": "val"
+ },
+ {
+  "run_id": "cpu022",
+  "kind": "fault",
+  "index": 172,
+  "wall_start": 1788551040.0,
+  "fault_type": "cpu_saturation",
+  "target": "order",
+  "fault_start": 490.0,
+  "fault_end": 990.0,
+  "impact_start": 525.0,
+  "intensity": 0.738,
+  "ramp": 40.2550206168487,
+  "spikes": [
+   {
+    "start": 529.0,
+    "hold": 120.0,
+    "factor": 2.91,
+    "ramp": 17.0
+   },
+   {
+    "start": 1439.0,
+    "hold": 113.0,
+    "factor": 3.53,
+    "ramp": 28.0
+   }
+  ],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "net018",
+  "kind": "fault",
+  "index": 173,
+  "wall_start": 1788552960.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 665.0,
+  "fault_end": 1080.0,
+  "impact_start": null,
+  "intensity": 0.406,
+  "ramp": 23.583011843795727,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 889,
+    "duration": 115,
+    "cpu": 39.0,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "n016",
+  "kind": "normal",
+  "index": 174,
+  "wall_start": 1788554880.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 1211.0,
+    "hold": 191.0,
+    "factor": 1.86,
+    "ramp": 18.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1481,
+    "duration": 56,
+    "cpu": 42.5,
+    "target": "gateway",
+    "mem": 0.0
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "cac015",
+  "kind": "fault",
+  "index": 175,
+  "wall_start": 1788556800.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 625.0,
+  "fault_end": 1135.0,
+  "impact_start": 635.0,
+  "intensity": 0.447,
+  "ramp": 8.403142200260767,
+  "spikes": [
+   {
+    "start": 646.0,
+    "hold": 206.0,
+    "factor": 4.54,
+    "ramp": 23.0
+   },
+   {
+    "start": 736.0,
+    "hold": 238.0,
+    "factor": 2.57,
+    "ramp": 19.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 342,
+    "duration": 100,
+    "cpu": 31.8,
+    "target": "auth",
+    "mem": 0.0
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "cpu032",
+  "kind": "fault",
+  "index": 176,
+  "wall_start": 1788558720.0,
+  "fault_type": "cpu_saturation",
+  "target": "auth",
+  "fault_start": 505.0,
+  "fault_end": 865.0,
+  "impact_start": null,
+  "intensity": 0.568,
+  "ramp": 228.57626371857134,
+  "spikes": [
+   {
+    "start": 1052.0,
+    "hold": 169.0,
+    "factor": 3.58,
+    "ramp": 16.0
+   }
+  ],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "db_012",
+  "kind": "fault",
+  "index": 177,
+  "wall_start": 1788560640.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 505.0,
+  "fault_end": 900.0,
+  "impact_start": null,
+  "intensity": 0.321,
+  "ramp": 49.70535130578051,
+  "spikes": [],
+  "batches": [],
+  "split": "val"
+ },
+ {
+  "run_id": "n009",
+  "kind": "normal",
+  "index": 178,
+  "wall_start": 1788562560.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 635.0,
+    "hold": 79.0,
+    "factor": 2.98,
+    "ramp": 31.0
+   },
+   {
+    "start": 157.0,
+    "hold": 98.0,
+    "factor": 1.99,
+    "ramp": 19.0
+   },
+   {
+    "start": 136.0,
+    "hold": 60.0,
+    "factor": 2.82,
+    "ramp": 19.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 609,
+    "duration": 64,
+    "cpu": 28.1,
+    "target": "postgres",
+    "mem": 35.4
+   },
+   {
+    "start": 453,
+    "duration": 68,
+    "cpu": 32.3,
+    "target": "gateway",
+    "mem": 0.0
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "n024",
+  "kind": "normal",
+  "index": 179,
+  "wall_start": 1788564480.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 1386,
+    "duration": 92,
+    "cpu": 28.1,
+    "target": "postgres",
+    "mem": 26.4
+   },
+   {
+    "start": 1368,
+    "duration": 55,
+    "cpu": 40.1,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "mem015",
+  "kind": "fault",
+  "index": 180,
+  "wall_start": 1788566400.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 365.0,
+  "fault_end": 820.0,
+  "impact_start": null,
+  "intensity": 0.399,
+  "ramp": 307.64855992259504,
+  "spikes": [
+   {
+    "start": 547.0,
+    "hold": 181.0,
+    "factor": 3.47,
+    "ramp": 37.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 145,
+    "duration": 68,
+    "cpu": 28.2,
+    "target": "postgres",
+    "mem": 36.7
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "net017",
+  "kind": "fault",
+  "index": 181,
+  "wall_start": 1788568320.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 510.0,
+  "fault_end": 990.0,
+  "impact_start": 575.0,
+  "intensity": 0.951,
+  "ramp": 71.45480559151679,
+  "spikes": [
+   {
+    "start": 993.0,
+    "hold": 206.0,
+    "factor": 3.02,
+    "ramp": 24.0
+   }
+  ],
+  "batches": [],
+  "split": "val"
+ },
+ {
+  "run_id": "db_000",
+  "kind": "fault",
+  "index": 182,
+  "wall_start": 1788570240.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 480.0,
+  "fault_end": 775.0,
+  "impact_start": 570.0,
+  "intensity": 0.733,
+  "ramp": 83.49090604136975,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 1330,
+    "duration": 57,
+    "cpu": 26.1,
+    "target": "gateway",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "n020",
+  "kind": "normal",
+  "index": 183,
+  "wall_start": 1788572160.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 933.0,
+    "hold": 96.0,
+    "factor": 3.98,
+    "ramp": 22.0
+   },
+   {
+    "start": 1223.0,
+    "hold": 151.0,
+    "factor": 3.32,
+    "ramp": 21.0
+   },
+   {
+    "start": 1321.0,
+    "hold": 227.0,
+    "factor": 3.37,
+    "ramp": 38.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 727,
+    "duration": 73,
+    "cpu": 32.8,
+    "target": "order",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "cpu021",
+  "kind": "fault",
+  "index": 184,
+  "wall_start": 1788574080.0,
+  "fault_type": "cpu_saturation",
+  "target": "auth",
+  "fault_start": 485.0,
+  "fault_end": 950.0,
+  "impact_start": 670.0,
+  "intensity": 0.594,
+  "ramp": 179.84465315650033,
+  "spikes": [
+   {
+    "start": 664.0,
+    "hold": 167.0,
+    "factor": 4.69,
+    "ramp": 30.0
+   },
+   {
+    "start": 346.0,
+    "hold": 133.0,
+    "factor": 2.92,
+    "ramp": 31.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 559,
+    "duration": 113,
+    "cpu": 26.9,
+    "target": "postgres",
+    "mem": 29.5
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "ser001",
+  "kind": "fault",
+  "index": 185,
+  "wall_start": 1788576000.0,
+  "fault_type": "service_crash",
+  "target": "gateway",
+  "fault_start": 585.0,
+  "fault_end": 940.0,
+  "impact_start": null,
+  "intensity": 0.781,
+  "ramp": 149.73736330211014,
+  "spikes": [
+   {
+    "start": 840.0,
+    "hold": 202.0,
+    "factor": 2.76,
+    "ramp": 30.0
+   }
+  ],
+  "batches": [],
+  "split": "val"
+ },
+ {
+  "run_id": "mem034",
+  "kind": "fault",
+  "index": 186,
+  "wall_start": 1788577920.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 690.0,
+  "fault_end": 1105.0,
+  "impact_start": null,
+  "intensity": 0.429,
+  "ramp": 419.86085920979565,
+  "spikes": [
+   {
+    "start": 850.0,
+    "hold": 126.0,
+    "factor": 2.96,
+    "ramp": 37.0
+   }
+  ],
+  "batches": [],
+  "split": "val"
+ },
+ {
+  "run_id": "mem032",
+  "kind": "fault",
+  "index": 187,
+  "wall_start": 1788579840.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 415.0,
+  "fault_end": 860.0,
+  "impact_start": 745.0,
+  "intensity": 0.839,
+  "ramp": 384.8075087562191,
+  "spikes": [
+   {
+    "start": 479.0,
+    "hold": 136.0,
+    "factor": 3.81,
+    "ramp": 25.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1472,
+    "duration": 118,
+    "cpu": 25.8,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "net006",
+  "kind": "fault",
+  "index": 188,
+  "wall_start": 1788581760.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 485.0,
+  "fault_end": 965.0,
+  "impact_start": 890.0,
+  "intensity": 0.562,
+  "ramp": 24.300466752060295,
+  "spikes": [
+   {
+    "start": 863.0,
+    "hold": 128.0,
+    "factor": 2.93,
+    "ramp": 31.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 129,
+    "duration": 159,
+    "cpu": 18.6,
+    "target": "postgres",
+    "mem": 31.0
+   },
+   {
+    "start": 696,
+    "duration": 62,
+    "cpu": 42.6,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "n029",
+  "kind": "normal",
+  "index": 189,
+  "wall_start": 1788583680.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 976,
+    "duration": 110,
+    "cpu": 33.6,
+    "target": "gateway",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "ser028",
+  "kind": "fault",
+  "index": 190,
+  "wall_start": 1788585600.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 575.0,
+  "fault_end": 1025.0,
+  "impact_start": 630.0,
+  "intensity": 0.638,
+  "ramp": 140.66724350174866,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 1177,
+    "duration": 54,
+    "cpu": 27.0,
+    "target": "order",
+    "mem": 0.0
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "cac019",
+  "kind": "fault",
+  "index": 191,
+  "wall_start": 1788587520.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 525.0,
+  "fault_end": 885.0,
+  "impact_start": 540.0,
+  "intensity": 0.876,
+  "ramp": 14.838029055035117,
+  "spikes": [
+   {
+    "start": 772.0,
+    "hold": 193.0,
+    "factor": 2.83,
+    "ramp": 24.0
+   }
+  ],
+  "batches": [],
+  "split": "val"
+ },
+ {
+  "run_id": "n026",
+  "kind": "normal",
+  "index": 192,
+  "wall_start": 1788589440.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 122.0,
+    "hold": 188.0,
+    "factor": 3.02,
+    "ramp": 38.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 354,
+    "duration": 115,
+    "cpu": 37.6,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "n034",
+  "kind": "normal",
+  "index": 193,
+  "wall_start": 1788591360.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 605,
+    "duration": 75,
+    "cpu": 27.5,
+    "target": "postgres",
+    "mem": 34.5
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "ser016",
+  "kind": "fault",
+  "index": 194,
+  "wall_start": 1788593280.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 390.0,
+  "fault_end": 730.0,
+  "impact_start": 390.0,
+  "intensity": 0.556,
+  "ramp": 0.0,
+  "spikes": [
+   {
+    "start": 651.0,
+    "hold": 95.0,
+    "factor": 3.77,
+    "ramp": 22.0
+   }
+  ],
+  "batches": [],
+  "split": "val"
+ },
+ {
+  "run_id": "n022",
+  "kind": "normal",
+  "index": 195,
+  "wall_start": 1788595200.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "cac009",
+  "kind": "fault",
+  "index": 196,
+  "wall_start": 1788597120.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 620.0,
+  "fault_end": 930.0,
+  "impact_start": 625.0,
+  "intensity": 0.95,
+  "ramp": 7.329142136093227,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 231,
+    "duration": 93,
+    "cpu": 36.3,
+    "target": "auth",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "net031",
+  "kind": "fault",
+  "index": 197,
+  "wall_start": 1788599040.0,
+  "fault_type": "network_latency",
+  "target": "redis",
+  "fault_start": 385.0,
+  "fault_end": 725.0,
+  "impact_start": 420.0,
+  "intensity": 0.515,
+  "ramp": 114.13636329103527,
+  "spikes": [
+   {
+    "start": 653.0,
+    "hold": 133.0,
+    "factor": 3.18,
+    "ramp": 17.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1127,
+    "duration": 155,
+    "cpu": 17.3,
+    "target": "postgres",
+    "mem": 30.9
+   },
+   {
+    "start": 377,
+    "duration": 58,
+    "cpu": 31.6,
+    "target": "gateway",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "ser022",
+  "kind": "fault",
+  "index": 198,
+  "wall_start": 1788600960.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 580.0,
+  "fault_end": 955.0,
+  "impact_start": 630.0,
+  "intensity": 0.87,
+  "ramp": 149.6080600111231,
+  "spikes": [
+   {
+    "start": 1119.0,
+    "hold": 181.0,
+    "factor": 3.48,
+    "ramp": 40.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 828,
+    "duration": 94,
+    "cpu": 26.8,
+    "target": "auth",
+    "mem": 0.0
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "db_015",
+  "kind": "fault",
+  "index": 199,
+  "wall_start": 1788602880.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 460.0,
+  "fault_end": 885.0,
+  "impact_start": 705.0,
+  "intensity": 0.563,
+  "ramp": 47.82237106805868,
+  "spikes": [
+   {
+    "start": 855.0,
+    "hold": 173.0,
+    "factor": 4.01,
+    "ramp": 39.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 797,
+    "duration": 82,
+    "cpu": 43.5,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "net001",
+  "kind": "fault",
+  "index": 200,
+  "wall_start": 1788604800.0,
+  "fault_type": "network_latency",
+  "target": "redis",
+  "fault_start": 440.0,
+  "fault_end": 800.0,
+  "impact_start": 450.0,
+  "intensity": 0.684,
+  "ramp": 55.45741367229613,
+  "spikes": [
+   {
+    "start": 679.0,
+    "hold": 164.0,
+    "factor": 2.02,
+    "ramp": 33.0
+   },
+   {
+    "start": 985.0,
+    "hold": 63.0,
+    "factor": 2.61,
+    "ramp": 23.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 550,
+    "duration": 181,
+    "cpu": 15.4,
+    "target": "postgres",
+    "mem": 33.3
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "cpu031",
+  "kind": "fault",
+  "index": 201,
+  "wall_start": 1788606720.0,
+  "fault_type": "cpu_saturation",
+  "target": "postgres",
+  "fault_start": 395.0,
+  "fault_end": 845.0,
+  "impact_start": 510.0,
+  "intensity": 0.78,
+  "ramp": 143.53330385579568,
+  "spikes": [
+   {
+    "start": 484.0,
+    "hold": 99.0,
+    "factor": 4.25,
+    "ramp": 32.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 991,
+    "duration": 71,
+    "cpu": 26.8,
+    "target": "postgres",
+    "mem": 36.9
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "mem027",
+  "kind": "fault",
+  "index": 202,
+  "wall_start": 1788608640.0,
+  "fault_type": "memory_leak",
+  "target": "payment",
+  "fault_start": 515.0,
+  "fault_end": 1030.0,
+  "impact_start": null,
+  "intensity": 0.749,
+  "ramp": 223.06898666649963,
+  "spikes": [
+   {
+    "start": 527.0,
+    "hold": 170.0,
+    "factor": 2.04,
+    "ramp": 27.0
+   },
+   {
+    "start": 942.0,
+    "hold": 187.0,
+    "factor": 2.42,
+    "ramp": 35.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 192,
+    "duration": 99,
+    "cpu": 33.2,
+    "target": "gateway",
+    "mem": 0.0
+   }
+  ],
+  "split": "val"
+ },
+ {
+  "run_id": "ser031",
+  "kind": "fault",
+  "index": 203,
+  "wall_start": 1788610560.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 495.0,
+  "fault_end": 845.0,
+  "impact_start": 525.0,
+  "intensity": 0.558,
+  "ramp": 72.513755702899,
+  "spikes": [],
+  "batches": [],
+  "split": "val"
+ },
+ {
+  "run_id": "ser027",
+  "kind": "fault",
+  "index": 204,
+  "wall_start": 1788612480.0,
+  "fault_type": "service_crash",
+  "target": "order",
+  "fault_start": 545.0,
+  "fault_end": 1020.0,
+  "impact_start": 610.0,
+  "intensity": 0.854,
+  "ramp": 124.68563465191066,
+  "spikes": [
+   {
+    "start": 937.0,
+    "hold": 170.0,
+    "factor": 2.15,
+    "ramp": 30.0
+   },
+   {
+    "start": 469.0,
+    "hold": 130.0,
+    "factor": 3.01,
+    "ramp": 24.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1313,
+    "duration": 91,
+    "cpu": 37.4,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "ser010",
+  "kind": "fault",
+  "index": 205,
+  "wall_start": 1788614400.0,
+  "fault_type": "service_crash",
+  "target": "payment",
+  "fault_start": 600.0,
+  "fault_end": 1015.0,
+  "impact_start": 600.0,
+  "intensity": 0.739,
+  "ramp": 0.0,
+  "spikes": [
+   {
+    "start": 860.0,
+    "hold": 150.0,
+    "factor": 3.13,
+    "ramp": 37.0
+   }
+  ],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "mem030",
+  "kind": "fault",
+  "index": 206,
+  "wall_start": 1788616320.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 395.0,
+  "fault_end": 690.0,
+  "impact_start": 530.0,
+  "intensity": 0.504,
+  "ramp": 406.77823280294524,
+  "spikes": [
+   {
+    "start": 509.0,
+    "hold": 101.0,
+    "factor": 4.25,
+    "ramp": 21.0
+   }
+  ],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "n038",
+  "kind": "normal",
+  "index": 207,
+  "wall_start": 1788618240.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 743,
+    "duration": 106,
+    "cpu": 44.4,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "n011",
+  "kind": "normal",
+  "index": 208,
+  "wall_start": 1788620160.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 613,
+    "duration": 53,
+    "cpu": 40.4,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "cac003",
+  "kind": "fault",
+  "index": 209,
+  "wall_start": 1788622080.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 575.0,
+  "fault_end": 890.0,
+  "impact_start": 580.0,
+  "intensity": 0.65,
+  "ramp": 3.7768171105184294,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 1055,
+    "duration": 90,
+    "cpu": 19.9,
+    "target": "postgres",
+    "mem": 40.6
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "ser029",
+  "kind": "fault",
+  "index": 210,
+  "wall_start": 1788624000.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 610.0,
+  "fault_end": 985.0,
+  "impact_start": 660.0,
+  "intensity": 0.764,
+  "ramp": 103.86247630990194,
+  "spikes": [
+   {
+    "start": 635.0,
+    "hold": 179.0,
+    "factor": 4.08,
+    "ramp": 30.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 301,
+    "duration": 74,
+    "cpu": 29.7,
+    "target": "postgres",
+    "mem": 31.5
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "n021",
+  "kind": "normal",
+  "index": 211,
+  "wall_start": 1788625920.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 1024.0,
+    "hold": 201.0,
+    "factor": 2.02,
+    "ramp": 37.0
+   },
+   {
+    "start": 1091.0,
+    "hold": 179.0,
+    "factor": 2.26,
+    "ramp": 19.0
+   }
+  ],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "cpu026",
+  "kind": "fault",
+  "index": 212,
+  "wall_start": 1788627840.0,
+  "fault_type": "cpu_saturation",
+  "target": "order",
+  "fault_start": 515.0,
+  "fault_end": 1030.0,
+  "impact_start": 610.0,
+  "intensity": 0.581,
+  "ramp": 109.15712659225193,
+  "spikes": [
+   {
+    "start": 648.0,
+    "hold": 195.0,
+    "factor": 1.92,
+    "ramp": 32.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 875,
+    "duration": 75,
+    "cpu": 40.8,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "db_011",
+  "kind": "fault",
+  "index": 213,
+  "wall_start": 1788629760.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 650.0,
+  "fault_end": 940.0,
+  "impact_start": 740.0,
+  "intensity": 0.655,
+  "ramp": 98.90828361902834,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 734,
+    "duration": 78,
+    "cpu": 25.6,
+    "target": "postgres",
+    "mem": 29.4
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "db_025",
+  "kind": "fault",
+  "index": 214,
+  "wall_start": 1788631680.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 380.0,
+  "fault_end": 825.0,
+  "impact_start": 450.0,
+  "intensity": 0.673,
+  "ramp": 54.58002172933842,
+  "spikes": [
+   {
+    "start": 1335.0,
+    "hold": 65.0,
+    "factor": 2.83,
+    "ramp": 20.0
+   }
+  ],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "db_032",
+  "kind": "fault",
+  "index": 215,
+  "wall_start": 1788633600.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 480.0,
+  "fault_end": 865.0,
+  "impact_start": null,
+  "intensity": 0.458,
+  "ramp": 153.1559979425761,
+  "spikes": [
+   {
+    "start": 802.0,
+    "hold": 124.0,
+    "factor": 1.99,
+    "ramp": 29.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 1078,
+    "duration": 188,
+    "cpu": 28.5,
+    "target": "postgres",
+    "mem": 26.6
+   },
+   {
+    "start": 697,
+    "duration": 86,
+    "cpu": 27.0,
+    "target": "order",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "n040",
+  "kind": "normal",
+  "index": 216,
+  "wall_start": 1788635520.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 1353.0,
+    "hold": 148.0,
+    "factor": 2.49,
+    "ramp": 16.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 788,
+    "duration": 123,
+    "cpu": 19.5,
+    "target": "postgres",
+    "mem": 27.4
+   },
+   {
+    "start": 543,
+    "duration": 107,
+    "cpu": 25.0,
+    "target": "order",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "mem007",
+  "kind": "fault",
+  "index": 217,
+  "wall_start": 1788637440.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 470.0,
+  "fault_end": 825.0,
+  "impact_start": null,
+  "intensity": 0.487,
+  "ramp": 193.0279279390923,
+  "spikes": [
+   {
+    "start": 654.0,
+    "hold": 98.0,
+    "factor": 3.55,
+    "ramp": 17.0
+   },
+   {
+    "start": 893.0,
+    "hold": 214.0,
+    "factor": 3.62,
+    "ramp": 20.0
+   }
+  ],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "net007",
+  "kind": "fault",
+  "index": 218,
+  "wall_start": 1788639360.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 645.0,
+  "fault_end": 1030.0,
+  "impact_start": 735.0,
+  "intensity": 0.979,
+  "ramp": 93.22654547232933,
+  "spikes": [
+   {
+    "start": 955.0,
+    "hold": 98.0,
+    "factor": 2.94,
+    "ramp": 16.0
+   }
+  ],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "ser021",
+  "kind": "fault",
+  "index": 219,
+  "wall_start": 1788641280.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 550.0,
+  "fault_end": 975.0,
+  "impact_start": 550.0,
+  "intensity": 0.924,
+  "ramp": 0.0,
+  "spikes": [],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "cpu023",
+  "kind": "fault",
+  "index": 220,
+  "wall_start": 1788643200.0,
+  "fault_type": "cpu_saturation",
+  "target": "gateway",
+  "fault_start": 630.0,
+  "fault_end": 935.0,
+  "impact_start": 635.0,
+  "intensity": 0.6,
+  "ramp": 154.97996146360788,
+  "spikes": [
+   {
+    "start": 780.0,
+    "hold": 64.0,
+    "factor": 2.48,
+    "ramp": 15.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 600,
+    "duration": 91,
+    "cpu": 23.8,
+    "target": "postgres",
+    "mem": 35.0
+   },
+   {
+    "start": 974,
+    "duration": 78,
+    "cpu": 27.7,
+    "target": "auth",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "db_029",
+  "kind": "fault",
+  "index": 221,
+  "wall_start": 1788645120.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 690.0,
+  "fault_end": 1005.0,
+  "impact_start": 785.0,
+  "intensity": 0.944,
+  "ramp": 162.31981993596526,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 462,
+    "duration": 81,
+    "cpu": 29.0,
+    "target": "postgres",
+    "mem": 39.9
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "ser009",
+  "kind": "fault",
+  "index": 222,
+  "wall_start": 1788647040.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 700.0,
+  "fault_end": 1165.0,
+  "impact_start": 810.0,
+  "intensity": 0.771,
+  "ramp": 131.33347798559367,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 574,
+    "duration": 45,
+    "cpu": 33.3,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "net015",
+  "kind": "fault",
+  "index": 223,
+  "wall_start": 1788648960.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 660.0,
+  "fault_end": 1145.0,
+  "impact_start": null,
+  "intensity": 0.576,
+  "ramp": 39.30092031651895,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 654,
+    "duration": 120,
+    "cpu": 38.9,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "mem002",
+  "kind": "fault",
+  "index": 224,
+  "wall_start": 1788650880.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 615.0,
+  "fault_end": 1045.0,
+  "impact_start": null,
+  "intensity": 0.556,
+  "ramp": 338.2076518559811,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 1016,
+    "duration": 169,
+    "cpu": 20.8,
+    "target": "postgres",
+    "mem": 33.3
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "mem004",
+  "kind": "fault",
+  "index": 225,
+  "wall_start": 1788652800.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 450.0,
+  "fault_end": 805.0,
+  "impact_start": 670.0,
+  "intensity": 0.92,
+  "ramp": 306.56284529710354,
+  "spikes": [],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "net027",
+  "kind": "fault",
+  "index": 226,
+  "wall_start": 1788654720.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 470.0,
+  "fault_end": 885.0,
+  "impact_start": null,
+  "intensity": 0.606,
+  "ramp": 31.393960456637426,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 1265,
+    "duration": 105,
+    "cpu": 39.5,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "cac028",
+  "kind": "fault",
+  "index": 227,
+  "wall_start": 1788656640.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 640.0,
+  "fault_end": 1025.0,
+  "impact_start": 645.0,
+  "intensity": 0.565,
+  "ramp": 3.769778752887367,
+  "spikes": [
+   {
+    "start": 875.0,
+    "hold": 61.0,
+    "factor": 3.76,
+    "ramp": 32.0
+   }
+  ],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "n001",
+  "kind": "normal",
+  "index": 228,
+  "wall_start": 1788658560.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 407.0,
+    "hold": 159.0,
+    "factor": 3.05,
+    "ramp": 16.0
+   },
+   {
+    "start": 1424.0,
+    "hold": 174.0,
+    "factor": 3.5,
+    "ramp": 30.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 920,
+    "duration": 67,
+    "cpu": 18.3,
+    "target": "postgres",
+    "mem": 34.5
+   },
+   {
+    "start": 687,
+    "duration": 83,
+    "cpu": 36.4,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "ser026",
+  "kind": "fault",
+  "index": 229,
+  "wall_start": 1788660480.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 550.0,
+  "fault_end": 820.0,
+  "impact_start": 550.0,
+  "intensity": 0.699,
+  "ramp": 0.0,
+  "spikes": [],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "cac023",
+  "kind": "fault",
+  "index": 230,
+  "wall_start": 1788662400.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 520.0,
+  "fault_end": 770.0,
+  "impact_start": 525.0,
+  "intensity": 0.415,
+  "ramp": 1.5383897527174906,
+  "spikes": [
+   {
+    "start": 1216.0,
+    "hold": 223.0,
+    "factor": 4.12,
+    "ramp": 19.0
+   }
+  ],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "ser017",
+  "kind": "fault",
+  "index": 231,
+  "wall_start": 1788664320.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 685.0,
+  "fault_end": 1055.0,
+  "impact_start": 835.0,
+  "intensity": 0.371,
+  "ramp": 159.63277670381572,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 1193,
+    "duration": 89,
+    "cpu": 23.6,
+    "target": "postgres",
+    "mem": 40.5
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "net021",
+  "kind": "fault",
+  "index": 232,
+  "wall_start": 1788666240.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 390.0,
+  "fault_end": 745.0,
+  "impact_start": 485.0,
+  "intensity": 0.784,
+  "ramp": 48.02438958455883,
+  "spikes": [
+   {
+    "start": 484.0,
+    "hold": 138.0,
+    "factor": 2.55,
+    "ramp": 28.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 391,
+    "duration": 151,
+    "cpu": 29.0,
+    "target": "postgres",
+    "mem": 36.2
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "ser018",
+  "kind": "fault",
+  "index": 233,
+  "wall_start": 1788668160.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 680.0,
+  "fault_end": 1065.0,
+  "impact_start": 710.0,
+  "intensity": 0.844,
+  "ramp": 89.19552107946367,
+  "spikes": [
+   {
+    "start": 695.0,
+    "hold": 96.0,
+    "factor": 3.56,
+    "ramp": 26.0
+   }
+  ],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "cpu010",
+  "kind": "fault",
+  "index": 234,
+  "wall_start": 1788670080.0,
+  "fault_type": "cpu_saturation",
+  "target": "order",
+  "fault_start": 690.0,
+  "fault_end": 1175.0,
+  "impact_start": 760.0,
+  "intensity": 0.936,
+  "ramp": 112.93374662488267,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 547,
+    "duration": 69,
+    "cpu": 40.6,
+    "target": "gateway",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "cac012",
+  "kind": "fault",
+  "index": 235,
+  "wall_start": 1788672000.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 640.0,
+  "fault_end": 910.0,
+  "impact_start": 645.0,
+  "intensity": 0.401,
+  "ramp": 8.390551667766227,
+  "spikes": [
+   {
+    "start": 724.0,
+    "hold": 188.0,
+    "factor": 2.75,
+    "ramp": 34.0
+   }
+  ],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "cpu024",
+  "kind": "fault",
+  "index": 236,
+  "wall_start": 1788673920.0,
+  "fault_type": "cpu_saturation",
+  "target": "gateway",
+  "fault_start": 385.0,
+  "fault_end": 670.0,
+  "impact_start": 625.0,
+  "intensity": 0.547,
+  "ramp": 210.02065054193295,
+  "spikes": [],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "cpu004",
+  "kind": "fault",
+  "index": 237,
+  "wall_start": 1788675840.0,
+  "fault_type": "cpu_saturation",
+  "target": "redis",
+  "fault_start": 445.0,
+  "fault_end": 760.0,
+  "impact_start": null,
+  "intensity": 0.7,
+  "ramp": 182.59557800038328,
+  "spikes": [
+   {
+    "start": 555.0,
+    "hold": 185.0,
+    "factor": 2.91,
+    "ramp": 33.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 509,
+    "duration": 108,
+    "cpu": 26.3,
+    "target": "payment",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "mem017",
+  "kind": "fault",
+  "index": 238,
+  "wall_start": 1788677760.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 565.0,
+  "fault_end": 895.0,
+  "impact_start": null,
+  "intensity": 0.33,
+  "ramp": 340.4833773605281,
+  "spikes": [],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "cac010",
+  "kind": "fault",
+  "index": 239,
+  "wall_start": 1788679680.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 570.0,
+  "fault_end": 840.0,
+  "impact_start": 575.0,
+  "intensity": 0.835,
+  "ramp": 9.226102037663045,
+  "spikes": [
+   {
+    "start": 378.0,
+    "hold": 112.0,
+    "factor": 3.97,
+    "ramp": 31.0
+   }
+  ],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "mem001",
+  "kind": "fault",
+  "index": 240,
+  "wall_start": 1788681600.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 570.0,
+  "fault_end": 1005.0,
+  "impact_start": 835.0,
+  "intensity": 0.766,
+  "ramp": 280.15187075579513,
+  "spikes": [
+   {
+    "start": 239.0,
+    "hold": 138.0,
+    "factor": 2.34,
+    "ramp": 21.0
+   }
+  ],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "n041",
+  "kind": "normal",
+  "index": 241,
+  "wall_start": 1788683520.0,
+  "fault_type": null,
+  "target": null,
+  "fault_start": null,
+  "fault_end": null,
+  "impact_start": null,
+  "intensity": null,
+  "ramp": null,
+  "spikes": [
+   {
+    "start": 1358.0,
+    "hold": 112.0,
+    "factor": 3.94,
+    "ramp": 24.0
+   }
+  ],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "net008",
+  "kind": "fault",
+  "index": 242,
+  "wall_start": 1788685440.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 670.0,
+  "fault_end": 965.0,
+  "impact_start": 755.0,
+  "intensity": 0.957,
+  "ramp": 129.21969164139608,
+  "spikes": [
+   {
+    "start": 200.0,
+    "hold": 90.0,
+    "factor": 3.26,
+    "ramp": 32.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 575,
+    "duration": 189,
+    "cpu": 25.7,
+    "target": "postgres",
+    "mem": 40.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "cac018",
+  "kind": "fault",
+  "index": 243,
+  "wall_start": 1788687360.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 665.0,
+  "fault_end": 1200.0,
+  "impact_start": 670.0,
+  "intensity": 0.441,
+  "ramp": 9.836350235975887,
+  "spikes": [
+   {
+    "start": 1083.0,
+    "hold": 223.0,
+    "factor": 2.16,
+    "ramp": 16.0
+   }
+  ],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "db_034",
+  "kind": "fault",
+  "index": 244,
+  "wall_start": 1788689280.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 650.0,
+  "fault_end": 1190.0,
+  "impact_start": 930.0,
+  "intensity": 0.513,
+  "ramp": 111.85213729040537,
+  "spikes": [
+   {
+    "start": 423.0,
+    "hold": 163.0,
+    "factor": 3.07,
+    "ramp": 31.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 366,
+    "duration": 114,
+    "cpu": 36.7,
+    "target": "order",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "cac025",
+  "kind": "fault",
+  "index": 245,
+  "wall_start": 1788691200.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 390.0,
+  "fault_end": 650.0,
+  "impact_start": 400.0,
+  "intensity": 0.932,
+  "ramp": 7.068092796409939,
+  "spikes": [],
+  "batches": [
+   {
+    "start": 378,
+    "duration": 53,
+    "cpu": 33.2,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "db_008",
+  "kind": "fault",
+  "index": 246,
+  "wall_start": 1788693120.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 570.0,
+  "fault_end": 855.0,
+  "impact_start": 640.0,
+  "intensity": 0.898,
+  "ramp": 123.76471940098862,
+  "spikes": [
+   {
+    "start": 638.0,
+    "hold": 70.0,
+    "factor": 3.15,
+    "ramp": 37.0
+   }
+  ],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "cac026",
+  "kind": "fault",
+  "index": 247,
+  "wall_start": 1788695040.0,
+  "fault_type": "cache_failure",
+  "target": "redis",
+  "fault_start": 420.0,
+  "fault_end": 725.0,
+  "impact_start": 430.0,
+  "intensity": 0.491,
+  "ramp": 14.714908025022236,
+  "spikes": [],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "mem006",
+  "kind": "fault",
+  "index": 248,
+  "wall_start": 1788696960.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 465.0,
+  "fault_end": 870.0,
+  "impact_start": null,
+  "intensity": 0.516,
+  "ramp": 365.9180407191937,
+  "spikes": [
+   {
+    "start": 595.0,
+    "hold": 93.0,
+    "factor": 2.56,
+    "ramp": 15.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 443,
+    "duration": 102,
+    "cpu": 22.2,
+    "target": "postgres",
+    "mem": 32.3
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "mem025",
+  "kind": "fault",
+  "index": 249,
+  "wall_start": 1788698880.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 510.0,
+  "fault_end": 795.0,
+  "impact_start": 525.0,
+  "intensity": 0.635,
+  "ramp": 233.302311476428,
+  "spikes": [
+   {
+    "start": 509.0,
+    "hold": 236.0,
+    "factor": 4.51,
+    "ramp": 16.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 768,
+    "duration": 63,
+    "cpu": 30.2,
+    "target": "auth",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "net020",
+  "kind": "fault",
+  "index": 250,
+  "wall_start": 1788700800.0,
+  "fault_type": "network_latency",
+  "target": "payment",
+  "fault_start": 390.0,
+  "fault_end": 855.0,
+  "impact_start": 575.0,
+  "intensity": 0.589,
+  "ramp": 42.757650576941714,
+  "spikes": [
+   {
+    "start": 542.0,
+    "hold": 165.0,
+    "factor": 3.87,
+    "ramp": 40.0
+   }
+  ],
+  "batches": [
+   {
+    "start": 568,
+    "duration": 81,
+    "cpu": 25.1,
+    "target": "redis",
+    "mem": 0.0
+   }
+  ],
+  "split": "test"
+ },
+ {
+  "run_id": "ser002",
+  "kind": "fault",
+  "index": 251,
+  "wall_start": 1788702720.0,
+  "fault_type": "service_crash",
+  "target": "auth",
+  "fault_start": 425.0,
+  "fault_end": 950.0,
+  "impact_start": 550.0,
+  "intensity": 0.774,
+  "ramp": 158.21992480672964,
+  "spikes": [],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "mem018",
+  "kind": "fault",
+  "index": 252,
+  "wall_start": 1788704640.0,
+  "fault_type": "memory_leak",
+  "target": "order",
+  "fault_start": 710.0,
+  "fault_end": 1025.0,
+  "impact_start": null,
+  "intensity": 0.632,
+  "ramp": 363.2316354065458,
+  "spikes": [
+   {
+    "start": 942.0,
+    "hold": 197.0,
+    "factor": 2.27,
+    "ramp": 35.0
+   },
+   {
+    "start": 1342.0,
+    "hold": 239.0,
+    "factor": 2.22,
+    "ramp": 19.0
+   }
+  ],
+  "batches": [],
+  "split": "test"
+ },
+ {
+  "run_id": "db_031",
+  "kind": "fault",
+  "index": 253,
+  "wall_start": 1788706560.0,
+  "fault_type": "db_slowdown",
+  "target": "postgres",
+  "fault_start": 610.0,
+  "fault_end": 985.0,
+  "impact_start": null,
+  "intensity": 0.513,
+  "ramp": 39.07272047657676,
+  "spikes": [
+   {
+    "start": 795.0,
+    "hold": 98.0,
+    "factor": 2.19,
+    "ramp": 35.0
+   }
+  ],
+  "batches": [],
+  "split": "test"
+ }
+]

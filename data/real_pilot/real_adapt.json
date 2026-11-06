@@ -1,0 +1,125 @@
+{
+ "windows": 439,
+ "healthy_windows_for_calibration": 226,
+ "protocol": "leave-one-run-out, rule fixed in advance",
+ "detection": {
+  "static_thresholds": {
+   "precision": 1.0,
+   "recall": 0.6396,
+   "f1": 0.7802,
+   "tp": 71,
+   "fp": 0,
+   "fn": 40,
+   "detected": 4,
+   "episode_recall": 0.6667,
+   "mean_delay_s": 44.6,
+   "false_alarms": 0,
+   "false_alarms_per_hour": 0.0
+  },
+  "simulator_zero_shot": {
+   "precision": 0.3008,
+   "recall": 1.0,
+   "f1": 0.4625,
+   "tp": 111,
+   "fp": 258,
+   "fn": 0,
+   "detected": 6,
+   "episode_recall": 1.0,
+   "mean_delay_s": 0.0,
+   "false_alarms": 2,
+   "false_alarms_per_hour": 2.791
+  },
+  "real_calibrated": {
+   "precision": 0.6981,
+   "recall": 1.0,
+   "f1": 0.8222,
+   "tp": 111,
+   "fp": 48,
+   "fn": 0,
+   "detected": 6,
+   "episode_recall": 1.0,
+   "mean_delay_s": 28.4,
+   "false_alarms": 6,
+   "false_alarms_per_hour": 8.372
+  }
+ },
+ "rootcause_real_calibrated": {
+  "top1": 0.667,
+  "top3": 0.833,
+  "n": 6,
+  "episodes": [
+   {
+    "run": "real001",
+    "fault": "db_slowdown",
+    "target": "postgres",
+    "top3": [
+     "gateway",
+     "postgres",
+     "order"
+    ],
+    "top1": false,
+    "in3": true
+   },
+   {
+    "run": "real002",
+    "fault": "memory_leak",
+    "target": "order",
+    "top3": [
+     "order",
+     "payment",
+     "redis"
+    ],
+    "top1": true,
+    "in3": true
+   },
+   {
+    "run": "real003",
+    "fault": "network_latency",
+    "target": "payment",
+    "top3": [
+     "postgres",
+     "gateway",
+     "order"
+    ],
+    "top1": false,
+    "in3": false
+   },
+   {
+    "run": "real004",
+    "fault": "service_crash",
+    "target": "auth",
+    "top3": [
+     "auth",
+     "gateway",
+     "redis"
+    ],
+    "top1": true,
+    "in3": true
+   },
+   {
+    "run": "real005",
+    "fault": "cache_failure",
+    "target": "redis",
+    "top3": [
+     "redis",
+     "auth",
+     "order"
+    ],
+    "top1": true,
+    "in3": true
+   },
+   {
+    "run": "real006",
+    "fault": "cpu_saturation",
+    "target": "postgres",
+    "top3": [
+     "postgres",
+     "gateway",
+     "order"
+    ],
+    "top1": true,
+    "in3": true
+   }
+  ]
+ }
+}

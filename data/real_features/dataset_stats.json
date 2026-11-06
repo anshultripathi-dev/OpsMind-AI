@@ -1,0 +1,19 @@
+{
+ "runs": 96,
+ "fault_episodes": 85,
+ "normal_runs": 11,
+ "impacted_episodes": 45,
+ "windows": 5745,
+ "overload_windows": 73,
+ "n_features": 261,
+ "windows_by_split": {
+  "train": 3253,
+  "test": 1376,
+  "val": 1116
+ },
+ "runs_by_split": {
+  "train": 55,
+  "val": 18,
+  "test": 23
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "dataset": "Loghub HDFS (2k sample, expert-labelled templates)",
+ "lines": 2000,
+ "ground_truth_templates": 14,
+ "drain_templates": 16,
+ "grouping_accuracy": 0.9975,
+ "published_reference": "Drain reports \u22480.998 grouping accuracy on HDFS (Zhu et al., 2023 benchmark)"
+}

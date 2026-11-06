@@ -1,0 +1,14 @@
+numpy
+pandas
+pyarrow
+scikit-learn
+xgboost
+shap
+torch
+drain3
+joblib
+fastapi
+uvicorn[standard]
+pydantic
+pytest
+httpx

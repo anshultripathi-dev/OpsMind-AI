@@ -1,0 +1,76 @@
+# OpsMind AI testbed: e-commerce style app with telemetry.
+#   docker compose -f testbed/docker-compose.yml up -d --build
+# NOTE: written for the project proposal; it has not been executed on the authoring machine
+# (no Docker available there). The ML pipeline runs on the calibrated simulator in opsmind/sim.
+name: opsmind
+x-service: &svc
+  build: ./services
+  restart: unless-stopped
+  depends_on:
+    postgres: { condition: service_healthy }
+    redis: { condition: service_healthy }
+  mem_limit: 512m
+  cpus: 1.0
+  logging: { driver: json-file, options: { max-size: "20m", max-file: "5" } }
+
+services:
+  gateway:
+    <<: *svc
+    container_name: opsmind-gateway
+    environment: { SERVICE: gateway }
+    ports: ["8080:8000"]
+  auth:
+    <<: *svc
+    container_name: opsmind-auth
+    environment: { SERVICE: auth }
+  order:
+    <<: *svc
+    container_name: opsmind-order
+    environment: { SERVICE: order }
+  payment:
+    <<: *svc
+    container_name: opsmind-payment
+    environment: { SERVICE: payment }
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: opsmind-postgres
+    environment: { POSTGRES_USER: opsmind, POSTGRES_PASSWORD: opsmind, POSTGRES_DB: shop }
+    command: ["postgres", "-c", "max_connections=100", "-c", "shared_preload_libraries=pg_stat_statements"]
+    mem_limit: 1g
+    cpus: 1.0
+    healthcheck: { test: ["CMD-SHELL", "pg_isready -U opsmind -d shop"], interval: 3s, timeout: 3s, retries: 20 }
+  redis:
+    image: redis:7-alpine
+    container_name: opsmind-redis
+    mem_limit: 256m
+    cpus: 1.0
+    healthcheck: { test: ["CMD", "redis-cli", "ping"], interval: 3s, timeout: 3s, retries: 20 }
+
+  postgres-exporter:
+    image: quay.io/prometheuscommunity/postgres-exporter
+    environment: { DATA_SOURCE_NAME: "postgresql://opsmind:opsmind@postgres:5432/shop?sslmode=disable" }
+  redis-exporter:
+    image: oliver006/redis_exporter
+    environment: { REDIS_ADDR: "redis://redis:6379" }
+  stats-exporter:
+    build: ./exporter
+    container_name: opsmind-stats-exporter
+    restart: unless-stopped
+    volumes: ["/var/run/docker.sock:/var/run/docker.sock"]
+  prometheus:
+    image: prom/prometheus:latest
+    volumes: ["./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro", "prom-data:/prometheus"]
+    ports: ["9090:9090"]
+    command: ["--config.file=/etc/prometheus/prometheus.yml", "--storage.tsdb.retention.time=30d"]
+
+  locust:
+    profiles: ["load"]
+    image: locustio/locust
+    volumes: ["./loadgen:/mnt/locust"]
+    environment: { BURST_USERS: "${BURST_USERS:-150}", BURST_FIRST: "${BURST_FIRST:-120}" }
+    command: ["-f", "/mnt/locust/locustfile.py", "--host", "http://gateway:8000", "--headless", "-u", "60", "-r", "5"]
+    depends_on: [gateway]
+
+volumes:
+  prom-data:

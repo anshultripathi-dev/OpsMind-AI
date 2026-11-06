@@ -1,0 +1,220 @@
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/jetbrains-mono';
+@import 'tailwindcss';
+
+/* ── Design tokens ─────────────────────────────────────────────────────────── */
+:root,
+[data-theme='dark'] {
+  --bg: #080a0f;
+  --bg-elev: #0c0f15;
+  --surface: #10141b;
+  --surface-2: #151a23;
+  --surface-3: #1b212c;
+  --border: #212836;
+  --border-strong: #2d3649;
+  --text: #e8ebf2;
+  --text-2: #a9b2c4;
+  --muted: #6d788e;
+  --accent: #7c83ff;
+  --accent-2: #22d3ee;
+  --accent-soft: rgba(124, 131, 255, 0.14);
+  --ok: #34d399;
+  --warn: #fbbf24;
+  --crit: #fb7185;
+  --info: #60a5fa;
+  --ok-soft: rgba(52, 211, 153, 0.12);
+  --warn-soft: rgba(251, 191, 36, 0.12);
+  --crit-soft: rgba(251, 113, 133, 0.13);
+  --info-soft: rgba(96, 165, 250, 0.13);
+  --grid: rgba(148, 163, 184, 0.09);
+  --shadow: 0 1px 0 rgba(255, 255, 255, 0.03) inset, 0 8px 28px -12px rgba(0, 0, 0, 0.6);
+  --glow: 0 0 0 1px rgba(124, 131, 255, 0.25), 0 0 40px -8px rgba(124, 131, 255, 0.35);
+  color-scheme: dark;
+}
+
+[data-theme='light'] {
+  --bg: #f3f5f9;
+  --bg-elev: #f8f9fc;
+  --surface: #ffffff;
+  --surface-2: #f7f8fb;
+  --surface-3: #eef1f6;
+  --border: #e2e6ee;
+  --border-strong: #cdd3df;
+  --text: #0e1320;
+  --text-2: #444e63;
+  --muted: #76809a;
+  --accent: #5457ee;
+  --accent-2: #0891b2;
+  --accent-soft: rgba(84, 87, 238, 0.09);
+  --ok: #059669;
+  --warn: #c2710c;
+  --crit: #e11d48;
+  --info: #2563eb;
+  --ok-soft: rgba(5, 150, 105, 0.1);
+  --warn-soft: rgba(194, 113, 12, 0.1);
+  --crit-soft: rgba(225, 29, 72, 0.09);
+  --info-soft: rgba(37, 99, 235, 0.09);
+  --grid: rgba(71, 85, 105, 0.11);
+  --shadow: 0 1px 2px rgba(15, 23, 42, 0.05), 0 8px 24px -14px rgba(15, 23, 42, 0.18);
+  --glow: 0 0 0 1px rgba(84, 87, 238, 0.3), 0 0 32px -10px rgba(84, 87, 238, 0.35);
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-elev: var(--bg-elev);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+  --color-fg: var(--text);
+  --color-fg-2: var(--text-2);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --color-accent-soft: var(--accent-soft);
+  --color-ok: var(--ok);
+  --color-warn: var(--warn);
+  --color-crit: var(--crit);
+  --color-info: var(--info);
+  --color-ok-soft: var(--ok-soft);
+  --color-warn-soft: var(--warn-soft);
+  --color-crit-soft: var(--crit-soft);
+  --color-info-soft: var(--info-soft);
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, 'SF Mono', Menlo, monospace;
+}
+
+/* ── Base ──────────────────────────────────────────────────────────────────── */
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.45;
+  font-feature-settings: 'cv11', 'ss01', 'tnum';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+::selection {
+  background: var(--accent-soft);
+}
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+.mono {
+  font-family: var(--font-mono);
+  font-feature-settings: normal;
+}
+
+/* ── Surfaces ──────────────────────────────────────────────────────────────── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+.card-flat {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.hairline {
+  border-color: var(--border);
+}
+.eyebrow {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.grid-bg {
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* ── Motion ────────────────────────────────────────────────────────────────── */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2.1);
+    opacity: 0;
+  }
+}
+@keyframes flow {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+@keyframes blink {
+  50% {
+    opacity: 0.25;
+  }
+}
+.animate-fade-up {
+  animation: fade-up 0.35s ease both;
+}
+.skeleton {
+  background: linear-gradient(90deg, var(--surface-2) 25%, var(--surface-3) 37%, var(--surface-2) 63%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s linear infinite;
+  border-radius: 8px;
+}
+.live-dot {
+  animation: blink 1.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Recharts polish */
+.recharts-cartesian-grid line {
+  stroke: var(--grid);
+}
+.recharts-text {
+  fill: var(--muted);
+  font-size: 10.5px;
+}
+.recharts-tooltip-wrapper {
+  outline: none;
+}
